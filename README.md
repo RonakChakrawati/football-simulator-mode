@@ -1,4 +1,4 @@
-# Football Simulator
+# Football Simulator (ONGOING)
 
 A console-based football match simulator built in C++ using Object-Oriented Programming and statistical match calculations.
 
