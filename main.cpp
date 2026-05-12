@@ -77,8 +77,10 @@ public:
         vector<GoalEvent> events;
         int adv = t1.generateTeamAttack() - t2.generateTeamDefend();
         int dis = t2.generateTeamAttack() - t1.generateTeamDefend();
-        if (adv < 0) adv = 0;
-        if (dis < 0) dis = 0;
+        if (adv < 0)
+            adv = 0;
+        if (dis < 0)
+            dis = 0;
         int goals1 = (adv / 10) + rand() % 3;
         int goals2 = (dis / 10) + rand() % 3;
 
@@ -107,16 +109,16 @@ public:
         }
 
         // comparision function : [](GoalEvent a, GoalEvent b){return a.time < b.time;} - compares a.time and b.time
-        sort(events.begin(), events.end(), [](GoalEvent a, GoalEvent b){ 
-            return a.time < b.time;
-        });
+        sort(events.begin(), events.end(), [](GoalEvent a, GoalEvent b)
+             { return a.time < b.time; });
 
         for (int j = 0; j < events.size(); j++)
         {
             cout << events[j].time << "' " << events[j].playerName << "\n";
         }
 
-        cout << "\n" << t1.name << " " << goals1 << " - " << goals2 << " " << t2.name;
+        cout << "\n"
+             << t1.name << " " << goals1 << " - " << goals2 << " " << t2.name;
         cout << "\n";
 
         if (goals1 > goals2)
@@ -132,7 +134,7 @@ public:
 int main()
 {
     srand(time(0));
-
+    vector<Team> quickMatchTeams;
     Player p1;
     p1.name = "MESSI";
     p1.shooting = 92;
@@ -197,11 +199,11 @@ int main()
 
     Team t2;
     t2.name = "REAL MADRID";
-    //cout << "\n" << t2.name << "\n";
+    // cout << "\n" << t2.name << "\n";
     t2.players.push_back(p4);
     t2.players.push_back(p5);
     t2.players.push_back(p6);
-    //t2.displayTeam();
+    // t2.displayTeam();
 
     Player b1;
     b1.name = "RIBERY";
@@ -232,11 +234,11 @@ int main()
 
     Team t3;
     t3.name = "BAYERN MUNICH";
-    //cout << "\n"<< t3.name << "\n";
+    // cout << "\n"<< t3.name << "\n";
     t3.players.push_back(b1);
     t3.players.push_back(b2);
     t3.players.push_back(b3);
-    //t3.displayTeam();
+    // t3.displayTeam();
 
     Player a1;
     a1.name = "KAKA";
@@ -267,48 +269,87 @@ int main()
 
     Team t4;
     t4.name = "AC MILAN";
-    //cout << "\n"<< t4.name << "\n";
+    // cout << "\n"<< t4.name << "\n";
     t4.players.push_back(a1);
     t4.players.push_back(a2);
     t4.players.push_back(a3);
-    //t4.displayTeam();
+    // t4.displayTeam();
 
-    Match m1;
+    quickMatchTeams.push_back(t1);
+    quickMatchTeams.push_back(t2);
+    quickMatchTeams.push_back(t3);
+    quickMatchTeams.push_back(t4);
 
     int choice;
-
-    cout << "\nWELCOME TO FIFA CAREER MODE SIMULATOR";
+    cout << "\nWELCOME TO FOOTBALL MATCH SIMULATOR";
     cout << "\n";
 
-    while(true){
-    system("clear");
-    cout << "\n===== FIFA CAREER MODE SIMULATOR =====\n";
-    cout << "\n1. Barca vs Madrid\n";
-    cout << "2. Barca vs Bayern\n";
-    cout << "3. Barca vs Milan\n";
-    cout << "4. Milan vs Bayern\n";
-    cout << "5. Madrid vs Milan\n";
-    cout << "6. Madrid vs Bayern\n";
-    cout << "7. Exit\n";
+    while (true)
+    {
+        cout << "1. CAREER MODE\n";
+        cout << "2. QUICK MATCH\n";
+        cout << "3. EXIT\n\n";
 
-    cout << "\nEnter Choice: ";
-    cin >> choice;
-    system("clear");
+        cout << "ENTER YOUR CHOICE : ";
+        cin >> choice;
+        system("clear");
+        if (choice == 1)
+        {
+        }
 
-    if(choice == 1) m1.score(t1,t2);
-    else if(choice == 2) m1.score(t1,t3);
-    else if(choice == 3) m1.score(t1,t4);
-    else if(choice == 4) m1.score(t3,t4);
-    else if(choice == 5) m1.score(t4,t2); 
-    else if(choice == 6) m1.score(t3,t2);
-    else if(choice == 7) break;
-    else{
-        cout << "\nInvalid Choice!\n";
+        else if (choice == 2)
+        {
+            Team a;
+            Team b;
+            system("clear");
+
+            cout << "=====================================\n";
+            cout << "         QUICK MATCH MODE\n";
+            cout << "=====================================\n\n";
+            cout << "Choose Your Teams\n\n";
+            cout << "[1] FC BARCELONA\n";
+            cout << "[2] REAL MADRID\n";
+            cout << "[3] BAYERN MUNICH\n";
+            cout << "[4] AC MILAN\n\n";
+
+            int selectTeam1, selectTeam2;
+            cout << "ENTER TEAM 1 NUMBER : ";
+            cin >> selectTeam1;
+            a = quickMatchTeams[selectTeam1 - 1];
+            cout << "\nENTER TEAM 2 NUMBER : ";
+            cin >> selectTeam2;
+            b = quickMatchTeams[selectTeam2 - 1];
+
+            system("clear");
+            cout << "=====================================\n";
+            cout << "        MATCH STARTING...\n";
+            cout << "=====================================\n\n";
+
+            cout << a.name << "  VS  " << b.name << "\n\n";
+            Match q1;
+            q1.score(a, b);
+
+            cout << "\n=====================================\n";
+            cout << " Press any number to return to menu ";
+            cout << "\n=====================================\n";
+
+            string back1;
+            cin >> back1;
+            cout << "\n";
+            system("clear");
+        }
+
+        else if (choice == 3)
+        {
+            cout << "THANKS FOR PLAYING !";
+            return 0;
+        }
+
+        else
+        {
+            cout << "INVALID INPUT !\n";
+        }
     }
 
-    cout << "\n\nPress any button to return to menu: ";
-    string back;
-    cin >> back;
-    }
     return 0;
 }
