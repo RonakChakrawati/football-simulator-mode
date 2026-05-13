@@ -8,98 +8,87 @@
 #include <algorithm>
 using namespace std;
 
-class GoalEvent
-{
+class GoalEvent{
 public:
     int time;
     string playerName;
 };
 
-class Player
-{
+class Player{
 public:
     string name;
     int shooting, passing, pace, dribbling, defending, physical;
-    int getAttack()
-    {
+    int getAttack(){
         return (shooting + passing + pace + dribbling) / 4;
     }
-    int getDefense()
-    {
+    int getDefense(){
         return (defending + physical) / 2;
     }
 };
 
-class Team
-{
+class Team{
 public:
     string name;
     vector<Player> players; // array that stores the players of a team has type Player
 
-    int generateTeamAttack()
-    {
+    int generateTeamAttack(){
         int attackAvg{0};
-        if (players.size() == 0)
-            return 0;
-        for (int i = 0; i < players.size(); i++)
-        {
+        if (players.size() == 0)return 0;
+        for (int i = 0; i < players.size(); i++){
             attackAvg += players[i].getAttack();
         }
         return attackAvg / players.size();
     }
 
-    int generateTeamDefend()
-    {
+    int generateTeamDefend(){
         int defendAvg{0};
-        if (players.size() == 0)
-            return 0;
-        for (int i = 0; i < players.size(); i++)
-        {
+        if (players.size() == 0)return 0;
+        for (int i = 0; i < players.size(); i++){
             defendAvg += players[i].getDefense();
         }
         return defendAvg / players.size();
     }
 
-    void displayTeam()
-    {
-        for (int i = 0; i < players.size(); i++)
-        {
+    void displayTeam(){
+        for (int i = 0; i < players.size(); i++){
             cout << players[i].name << " | Attack: " << players[i].getAttack() << " | Defense: " << players[i].getDefense() << "\n";
         }
     }
 };
 
-class Match
-{
+class Match{
 public:
-    void score(Team &t1, Team &t2)
-    {
+    void score(Team &t1, Team &t2){
         vector<GoalEvent> events;
         int adv = t1.generateTeamAttack() - t2.generateTeamDefend();
         int dis = t2.generateTeamAttack() - t1.generateTeamDefend();
-        if (adv < 0)
-            adv = 0;
-        if (dis < 0)
-            dis = 0;
-        int goals1 = (adv / 10) + rand() % 3;
-        int goals2 = (dis / 10) + rand() % 3;
+
+        if (adv < 0) adv = 0;
+        if (dis < 0) dis = 0;
+
+        int goals1 = max(0, (adv / 15) + (rand() % 3));
+        int goals2 = max(0, (dis / 15) + (rand() % 3));
+
+        goals1 = min(goals1, 6);
+        goals2 = min(goals2, 6);
+
+        if (goals1 > 3) goals2 = max(0, goals2 - 1);
+        if (goals2 > 3) goals1 = max(0, goals1 - 1);
 
         cout << "\n===== MATCH START =====\n";
         cout << t1.name << " VS " << t2.name << "\n ";
         cout << "\nGoal Scorers:\n";
 
-        for (int i = 0; i < goals1; i++)
-        {
+        for (int i = 0; i < goals1; i++){
             GoalEvent g;
             int time1 = rand() % 90 + 1;
-            int randomIndex1 = rand() % t1.players.size();
+            int randomIndex1 = rand() % ((t1.generateTeamAttack())*3);
             g.time = time1;
             g.playerName = t1.players[randomIndex1].name;
             events.push_back(g);
         }
 
-        for (int i = 0; i < goals2; i++)
-        {
+        for (int i = 0; i < goals2; i++){
             GoalEvent t;
             int time2 = rand() % 90 + 1;
             int randomIndex2 = rand() % t2.players.size();
@@ -109,30 +98,23 @@ public:
         }
 
         // comparision function : [](GoalEvent a, GoalEvent b){return a.time < b.time;} - compares a.time and b.time
-        sort(events.begin(), events.end(), [](GoalEvent a, GoalEvent b)
-             { return a.time < b.time; });
+        sort(events.begin(), events.end(), [](GoalEvent a, GoalEvent b){return a.time < b.time; });
 
-        for (int j = 0; j < events.size(); j++)
-        {
+        for (int j = 0; j < events.size(); j++){
             cout << events[j].time << "' " << events[j].playerName << "\n";
         }
 
-        cout << "\n"
-             << t1.name << " " << goals1 << " - " << goals2 << " " << t2.name;
+        cout << "\n"<< t1.name << " " << goals1 << " - " << goals2 << " " << t2.name;
         cout << "\n";
 
-        if (goals1 > goals2)
-            cout << t1.name << " wins!\n";
-        else if (goals2 > goals1)
-            cout << t2.name << " wins!\n";
-        else
-            cout << "Match Draw!\n";
+        if (goals1 > goals2)cout << t1.name << " wins!\n";
+        else if (goals2 > goals1)cout << t2.name << " wins!\n";
+        else cout << "Match Draw!\n";
         cout << "\n===== FULL TIME =====\n";
     }
 };
 
-int main()
-{
+int main(){
     srand(time(0));
     vector<Team> quickMatchTeams;
     Player p1;
@@ -284,8 +266,7 @@ int main()
     cout << "\nWELCOME TO FOOTBALL MATCH SIMULATOR";
     cout << "\n";
 
-    while (true)
-    {
+    while (true){
         cout << "1. CAREER MODE\n";
         cout << "2. QUICK MATCH\n";
         cout << "3. EXIT\n\n";
@@ -293,12 +274,10 @@ int main()
         cout << "ENTER YOUR CHOICE : ";
         cin >> choice;
         system("clear");
-        if (choice == 1)
-        {
+        if (choice == 1){
         }
 
-        else if (choice == 2)
-        {
+        else if (choice == 2){
             Team a;
             Team b;
             system("clear");
@@ -338,18 +317,13 @@ int main()
             cout << "\n";
             system("clear");
         }
-
-        else if (choice == 3)
-        {
+        else if (choice == 3){
             cout << "THANKS FOR PLAYING !";
             return 0;
         }
-
-        else
-        {
+        else{
             cout << "INVALID INPUT !\n";
         }
     }
-
     return 0;
 }
