@@ -75,29 +75,51 @@ public:
         cout << t1.name << " VS " << t2.name << "\n ";
         cout << "\nGoal Scorers:\n";
 
-        for (int i = 0; i < chances1 ; i++){
-            int chancesInToGoals1 = rand()%10;
-            if(chancesInToGoals1 == 5){
-                GoalEvent g;
-                goals1++;
-                int time1 = rand() % 90 + 1;
-                int randomIndex1 = rand() % t1.players.size();
-                g.time = time1;
-                g.playerName = t1.players[randomIndex1].name;
-                events.push_back(g);
+        for(int i = 0; i < chances1 ; i++){
+        int chancesInToGoals1 = rand()%10;
+        if(chancesInToGoals1 == 9){
+            GoalEvent g;
+            goals1++;
+            int time1 = rand() % 90 + 1;
+            g.time = time1;
+            int totalShoot = 0;
+            for(int j = 0; j < t1.players.size(); j++){
+                totalShoot += t1.players[j].shooting;
+            }
+            int randomGoalScorer = rand() % totalShoot;
+            int c = 0;
+            for(int j = 0; j < t1.players.size(); j++){
+                c += t1.players[j].shooting;
+                if(randomGoalScorer < c){
+                    g.playerName = t1.players[j].name;
+                    break;
+                }
+            }
+            events.push_back(g);
             }
         }
 
-        for (int i = 0; i < chances2 ; i++){
-            int chancesInToGoals2 = rand()%10;
-            if(chancesInToGoals2 == 5){
-                GoalEvent g;
-                goals2++;
-                int time2 = rand() % 90 + 1;
-                int randomIndex2 = rand() % t2.players.size();
-                g.time = time2;
-                g.playerName = t2.players[randomIndex2].name;
-                events.push_back(g);
+        for(int i = 0; i < chances2 ; i++){
+        int chancesInToGoals2 = rand()%10;
+        if(chancesInToGoals2 == 9){
+            goals2++;
+            GoalEvent g;
+            int time2 = rand() % 90 + 1;
+            g.time = time2;
+            int totalShoot = 0;
+            for(int j = 0; j < t2.players.size(); j++){
+                totalShoot += t2.players[j].shooting;
+            }
+            int randomGoalScorer = rand() % totalShoot;
+            int c = 0;
+            for(int j = 0; j < t2.players.size(); j++){
+                c += t2.players[j].shooting;
+                if(randomGoalScorer < c){
+                    g.playerName = t2.players[j].name;
+                    break;
+                }
+            }
+            events.push_back(g);
             }
         }
 
