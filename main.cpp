@@ -66,35 +66,39 @@ public:
         if (adv < 0) adv = 0;
         if (dis < 0) dis = 0;
 
-        int goals1 = max(0, (adv / 15) + (rand() % 3));
-        int goals2 = max(0, (dis / 15) + (rand() % 3));
+        int chances1 = adv/2 + (rand()%3);
+        int chances2 = dis/2 + (rand()%3);
 
-        goals1 = min(goals1, 6);
-        goals2 = min(goals2, 6);
-
-        if (goals1 > 3) goals2 = max(0, goals2 - 1);
-        if (goals2 > 3) goals1 = max(0, goals1 - 1);
+        int goals1{0} , goals2{0};
 
         cout << "\n===== MATCH START =====\n";
         cout << t1.name << " VS " << t2.name << "\n ";
         cout << "\nGoal Scorers:\n";
 
-        for (int i = 0; i < goals1; i++){
-            GoalEvent g;
-            int time1 = rand() % 90 + 1;
-            int randomIndex1 = rand() % ((t1.generateTeamAttack())*3);
-            g.time = time1;
-            g.playerName = t1.players[randomIndex1].name;
-            events.push_back(g);
+        for (int i = 0; i < chances1 ; i++){
+            int chancesInToGoals1 = rand()%10;
+            if(chancesInToGoals1 == 5){
+                GoalEvent g;
+                goals1++;
+                int time1 = rand() % 90 + 1;
+                int randomIndex1 = rand() % t1.players.size();
+                g.time = time1;
+                g.playerName = t1.players[randomIndex1].name;
+                events.push_back(g);
+            }
         }
 
-        for (int i = 0; i < goals2; i++){
-            GoalEvent t;
-            int time2 = rand() % 90 + 1;
-            int randomIndex2 = rand() % t2.players.size();
-            t.time = time2;
-            t.playerName = t2.players[randomIndex2].name;
-            events.push_back(t);
+        for (int i = 0; i < chances2 ; i++){
+            int chancesInToGoals2 = rand()%10;
+            if(chancesInToGoals2 == 5){
+                GoalEvent g;
+                goals2++;
+                int time2 = rand() % 90 + 1;
+                int randomIndex2 = rand() % t2.players.size();
+                g.time = time2;
+                g.playerName = t2.players[randomIndex2].name;
+                events.push_back(g);
+            }
         }
 
         // comparision function : [](GoalEvent a, GoalEvent b){return a.time < b.time;} - compares a.time and b.time
