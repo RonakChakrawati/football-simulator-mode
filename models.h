@@ -4,20 +4,21 @@
 #include <iostream>
 #include <string>
 #include <vector>
+using namespace std;
 
 class GoalEvent {
 public:
   int time;
-  std::string playerName;
+  string playerName;
 };
 
 class Player {
 public:
-  std::string name;
-  std::string nationality;
+  string name;
+  string nationality;
 
-  std::string role;
-  std::string position;
+  string role;
+  string position;
 
   int age;
 
@@ -32,25 +33,21 @@ public:
   int goalkeeping;
 
   int getAttack() const {
-    return (shooting * 4 + dribbling * 3 + pace * 2 + passing * 2 + physical) /
-           12;
+    return (shooting * 4 + dribbling * 3 + pace * 2 + passing * 2 + physical) / 12;
   }
-
   int getDefense() const {
     return (defending * 4 + physical * 3 + pace * 2) / 9;
   }
-
   int getMidfield() const {
     return (passing * 4 + dribbling * 3 + defending * 2 + physical) / 10;
   }
-
   int getGoalkeeping() const { return goalkeeping; }
 };
 
 class Team {
 public:
-  std::string name;
-  std::vector<Player> players;
+  string name;
+  vector<Player> players;
 
   int getTeamAttack() const {
     int attackAvg{0};
@@ -101,28 +98,26 @@ public:
   }
 
   void displayTeam() const {
-    std::cout << "\n=====================================\n";
-    std::cout << "TEAM : " << name << "\n";
-    std::cout << "=====================================\n\n";
+    cout << "\n=====================================\n";
+    cout << "TEAM : " << name << "\n";
+    cout << "=====================================\n\n";
 
     for (const Player &p : players) {
-      std::cout << p.name << " | " << p.position << " | ATK: " << p.getAttack()
-                << " | DEF: " << p.getDefense()
-                << " | MID: " << p.getMidfield();
+      cout << p.name << " | " << p.position << " | ATK: " << p.getAttack()<< " | DEF: " << p.getDefense() << " | MID: " << p.getMidfield();
 
       if (p.position == "GK") {
-        std::cout << " | GK: " << p.getGoalkeeping();
+        cout << " | GK: " << p.getGoalkeeping();
       }
 
-      std::cout << "\n";
+      cout << "\n";
     }
 
-    std::cout << "\n-------------------------------------\n";
-    std::cout << "TEAM ATTACK      : " << getTeamAttack() << "\n";
-    std::cout << "TEAM DEFENSE     : " << getTeamDefense() << "\n";
-    std::cout << "TEAM MIDFIELD    : " << getTeamMidfield() << "\n";
-    std::cout << "TEAM GOALKEEPING : " << getTeamGoalkeeping() << "\n";
-    std::cout << "-------------------------------------\n";
+    cout << "\n-------------------------------------\n";
+    cout << "TEAM ATTACK      : " << getTeamAttack() << "\n";
+    cout << "TEAM DEFENSE     : " << getTeamDefense() << "\n";
+    cout << "TEAM MIDFIELD    : " << getTeamMidfield() << "\n";
+    cout << "TEAM GOALKEEPING : " << getTeamGoalkeeping() << "\n";
+    cout << "-------------------------------------\n";
   }
 };
 

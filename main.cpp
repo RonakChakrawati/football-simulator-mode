@@ -1,5 +1,5 @@
 // project for football simulation
-
+#include "loader.h"
 #include "data.h"
 #include "match.h"
 #include <cstdlib>
@@ -9,14 +9,16 @@
 #include <vector>
 using namespace std;
 
-int main() {
+int main()
+{
   srand(time(0));
-  vector<Team> quickMatchTeams = createTeams();
+  vector<Team> teams = loadTeams("clubs_teams.csv");
   int choice;
   cout << "\nWELCOME TO FOOTBALL MATCH SIMULATOR";
   cout << "\n";
 
-  while (true) {
+  while (true)
+  {
     cout << "1. CAREER MODE\n";
     cout << "2. QUICK MATCH\n";
     cout << "3. SIMULATION\n";
@@ -25,10 +27,12 @@ int main() {
     cout << "ENTER YOUR CHOICE : ";
     cin >> choice;
     system("clear");
-    if (choice == 1) {
+    if (choice == 1)
+    {
     }
 
-    else if (choice == 2) {
+    else if (choice == 2)
+    {
       Team a;
       Team b;
       system("clear");
@@ -57,10 +61,10 @@ int main() {
       int selectTeam1, selectTeam2;
       cout << "ENTER TEAM 1 NUMBER : ";
       cin >> selectTeam1;
-      a = quickMatchTeams[selectTeam1 - 1];
+      a = teams[selectTeam1 - 1];
       cout << "\nENTER TEAM 2 NUMBER : ";
       cin >> selectTeam2;
-      b = quickMatchTeams[selectTeam2 - 1];
+      b = teams[selectTeam2 - 1];
 
       system("clear");
       cout << "=====================================\n";
@@ -81,7 +85,8 @@ int main() {
       system("clear");
     }
 
-    else if (choice == 3) {
+    else if (choice == 3)
+    {
       system("clear");
       cout << "=====================================\n";
       cout << "         AUTO SIMULATION\n";
@@ -111,13 +116,14 @@ int main() {
       cin >> team2Choice;
       cout << "NUMBER OF SIMULATIONS : ";
       cin >> simulations;
-      Team sim1 = quickMatchTeams[team1Choice - 1];
-      Team sim2 = quickMatchTeams[team2Choice - 1];
+      Team sim1 = teams[team1Choice - 1];
+      Team sim2 = teams[team2Choice - 1];
       int wins1 = 0;
       int wins2 = 0;
       int draws = 0;
       Match autoSim;
-      for (int i = 1; i <= simulations; i++) {
+      for (int i = 1; i <= simulations; i++)
+      {
         cout << "\n========== MATCH " << i << " ==========\n";
         autoSim.score(sim1, sim2);
         if (autoSim.winner == 1)
@@ -137,10 +143,14 @@ int main() {
       string back;
       cin >> back;
       system("clear");
-    } else if (choice == 4) {
+    }
+    else if (choice == 4)
+    {
       cout << "THANKS FOR PLAYING !" << endl;
       return 0;
-    } else {
+    }
+    else
+    {
       cout << "INVALID INPUT !\n";
     }
   }

@@ -11,17 +11,11 @@ void Match::score(const Team &t1, const Team &t2)
     homeGoals = 0;
     awayGoals = 0;
     winner = 0;
-
     vector<GoalEvent> events;
-
     int adv = (t1.getTeamAttack() * 2 + t1.getTeamMidfield()) - (t2.getTeamDefense() * 2 + t2.getTeamMidfield() / 2);
     int dis = (t2.getTeamAttack() * 2 + t2.getTeamMidfield()) - (t1.getTeamDefense() * 2 + t1.getTeamMidfield() / 2);
-
-    if (adv < 0)
-        adv = 0;
-    if (dis < 0)
-        dis = 0;
-
+    if (adv < 0) adv = 0;
+    if (dis < 0) dis = 0;
     int chances1 = (adv / 8) + 1 + (rand() % 3);
     int chances2 = (dis / 8) + 1 + (rand() % 3);
 
@@ -32,7 +26,6 @@ void Match::score(const Team &t1, const Team &t2)
         {
             totalAttack += t1.players[j].getAttack();
         }
-
         Player attacker1;
         int randomAttacker = rand() % totalAttack;
         int cumAtk = 0;
@@ -45,11 +38,8 @@ void Match::score(const Team &t1, const Team &t2)
                 break;
             }
         }
-
         int totalDef = 0;
-        for (int j = 1; j <= 3; j++)
-            totalDef += t2.players[j].getDefense();
-
+        for (int j = 1; j <= 3; j++) totalDef += t2.players[j].getDefense();
         Player defender2;
         int randomDef = rand() % totalDef;
         int cDef = 0;
@@ -79,8 +69,7 @@ void Match::score(const Team &t1, const Team &t2)
     {
 
         int totalAttack = 0;
-        for (int j = 8; j <= 10; j++)
-            totalAttack += t2.players[j].getAttack();
+        for (int j = 8; j <= 10; j++) totalAttack += t2.players[j].getAttack();
 
         Player attacker2;
         int randomAttacker = rand() % totalAttack;
@@ -96,8 +85,7 @@ void Match::score(const Team &t1, const Team &t2)
         }
 
         int totalDef = 0;
-        for (int j = 1; j <= 3; j++)
-            totalDef += t1.players[j].getDefense();
+        for (int j = 1; j <= 3; j++) totalDef += t1.players[j].getDefense();
 
         Player defender1;
         int randomDef = rand() % totalDef;
@@ -127,24 +115,19 @@ void Match::score(const Team &t1, const Team &t2)
     cout << "\n===== MATCH START =====\n";
     cout << t1.name << " VS " << t2.name << "\n";
 
-    sort(events.begin(), events.end(),
-         [](const GoalEvent &a, const GoalEvent &b)
-         { return a.time < b.time; });
+    sort(events.begin(), events.end(),[](const GoalEvent &a, const GoalEvent &b){ return a.time < b.time; });
 
     if (!events.empty())
     {
         cout << "\nGoal Scorers:\n";
-        for (const GoalEvent &g : events)
-            cout << "  " << g.time << "' " << g.playerName << "\n";
+        for (const GoalEvent &g : events) cout << "  " << g.time << "' " << g.playerName << "\n";
     }
     else
     {
         cout << "\n  No goals scored.\n";
     }
 
-    cout << "\n"
-         << t1.name << "  " << homeGoals << " - " << awayGoals << "  " << t2.name
-         << "\n";
+    cout << "\n"<< t1.name << "  " << homeGoals << " - " << awayGoals << "  " << t2.name<< "\n";
 
     if (homeGoals > awayGoals)
     {
