@@ -22,7 +22,8 @@ int main()
     cout << "1. CAREER MODE\n";
     cout << "2. QUICK MATCH\n";
     cout << "3. SIMULATION\n";
-    cout << "4. EXIT\n\n";
+    cout << "4. WC 2026\n";
+    cout << "5. EXIT\n\n";
 
     cout << "ENTER YOUR CHOICE : ";
     cin >> choice;
@@ -144,7 +145,12 @@ int main()
       cin >> back;
       system("clear");
     }
-    else if (choice == 4)
+
+    else if(choice == 4){
+
+    }
+
+    else if (choice == 5)
     {
       cout << "THANKS FOR PLAYING !" << endl;
       return 0;

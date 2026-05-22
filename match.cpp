@@ -12,44 +12,62 @@ void Match::score(const Team &t1, const Team &t2)
     awayGoals = 0;
     winner = 0;
     vector<GoalEvent> events;
-    int adv = (t1.getTeamAttack() * 2 + t1.getTeamMidfield()) - (t2.getTeamDefense() * 2 + t2.getTeamMidfield() / 2);
-    int dis = (t2.getTeamAttack() * 2 + t2.getTeamMidfield()) - (t1.getTeamDefense() * 2 + t1.getTeamMidfield() / 2);
-    if (adv < 0) adv = 0;
-    if (dis < 0) dis = 0;
-    int chances1 = (adv / 8) + 1 + (rand() % 3);
-    int chances2 = (dis / 8) + 1 + (rand() % 3);
+    int adv = (t1.getTeamAttack() * 3 + t1.getTeamMidfield() * 2) - (t2.getTeamDefense() * 2 + t2.getTeamMidfield() / 2);
+    int dis = (t2.getTeamAttack() * 3 + t2.getTeamMidfield() * 2) - (t1.getTeamDefense() * 2 + t1.getTeamMidfield() / 2);
+    if (adv < 0)
+        adv = 0;
+    if (dis < 0)
+        dis = 0;
+    int chances1 = (adv / 18) + 1 + (rand() % 3);
+    int chances2 = (dis / 18) + 1 + (rand() % 3);
 
     for (int i = 0; i < chances1; i++)
     {
         int totalAttack = 0;
-        for (int j = 8; j <= 10; j++)
+        for (int j = 0; j < 11; j++)
         {
-            totalAttack += t1.players[j].getAttack();
+            if (t1.players[j].role == "Attacker")
+            {
+                totalAttack += t1.players[j].getAttack();
+            }
         }
         Player attacker1;
         int randomAttacker = rand() % totalAttack;
-        int cumAtk = 0;
-        for (int j = 8; j <= 10; j++)
+        int cAtk = 0;
+        for (int j = 0; j < 11; j++)
         {
-            cumAtk += t1.players[j].getAttack();
-            if (randomAttacker < cumAtk)
+            if (t1.players[j].role == "Attacker")
             {
-                attacker1 = t1.players[j];
-                break;
+                cAtk += t1.players[j].getAttack();
+                if (randomAttacker < cAtk)
+                {
+                    attacker1 = t1.players[j];
+                    break;
+                }
             }
         }
+
         int totalDef = 0;
-        for (int j = 1; j <= 3; j++) totalDef += t2.players[j].getDefense();
+        for (int j = 0; j < 11; j++)
+        {
+            if (t2.players[j].role == "Defender")
+            {
+                totalDef += t2.players[j].getDefense();
+            }
+        }
         Player defender2;
         int randomDef = rand() % totalDef;
         int cDef = 0;
-        for (int j = 1; j <= 3; j++)
+        for (int j = 0; j < 11; j++)
         {
-            cDef += t2.players[j].getDefense();
-            if (randomDef < cDef)
+            if (t2.players[j].role == "Defender")
             {
-                defender2 = t2.players[j];
-                break;
+                cDef += t2.players[j].getDefense();
+                if (randomDef < cDef)
+                {
+                    defender2 = t2.players[j];
+                    break;
+                }
             }
         }
 
@@ -67,32 +85,49 @@ void Match::score(const Team &t1, const Team &t2)
 
     for (int i = 0; i < chances2; i++)
     {
-
         int totalAttack = 0;
-        for (int j = 8; j <= 10; j++) totalAttack += t2.players[j].getAttack();
+        for (int j = 0; j < 11; j++)
+        {
+            if (t2.players[j].role == "Attacker")
+            {
+                totalAttack += t2.players[j].getAttack();
+            }
+        }
 
         Player attacker2;
         int randomAttacker = rand() % totalAttack;
         int cAtk = 0;
-        for (int j = 8; j <= 10; j++)
+        for (int j = 0; j < 11; j++)
         {
-            cAtk += t2.players[j].getAttack();
-            if (randomAttacker < cAtk)
+            if (t2.players[j].role == "Attacker")
             {
-                attacker2 = t2.players[j];
-                break;
+                cAtk += t2.players[j].getAttack();
+                if (randomAttacker < cAtk)
+                {
+                    attacker2 = t2.players[j];
+                    break;
+                }
             }
         }
 
         int totalDef = 0;
-        for (int j = 1; j <= 3; j++) totalDef += t1.players[j].getDefense();
+        for (int j = 0; j < 11; j++)
+        {
+            if (t1.players[j].role == "Defender")
+            {
+                totalDef += t1.players[j].getDefense();
+            }
+        }
 
         Player defender1;
         int randomDef = rand() % totalDef;
         int cDef = 0;
-        for (int j = 1; j <= 3; j++)
+        for (int j = 0; j < 11; j++)
         {
-            cDef += t1.players[j].getDefense();
+            if (t1.players[j].role == "Defender")
+            {
+                cDef += t1.players[j].getDefense();
+            }
             if (randomDef < cDef)
             {
                 defender1 = t1.players[j];
@@ -102,7 +137,7 @@ void Match::score(const Team &t1, const Team &t2)
 
         double scoringChance = (double)attacker2.getAttack() / (attacker2.getAttack() + defender1.getDefense());
         int roll = rand() % 100;
-        if (roll < scoringChance * 35)
+        if (roll < scoringChance *  28)
         {
             GoalEvent g;
             g.playerName = attacker2.name;
@@ -115,19 +150,22 @@ void Match::score(const Team &t1, const Team &t2)
     cout << "\n===== MATCH START =====\n";
     cout << t1.name << " VS " << t2.name << "\n";
 
-    sort(events.begin(), events.end(),[](const GoalEvent &a, const GoalEvent &b){ return a.time < b.time; });
+    sort(events.begin(), events.end(), [](const GoalEvent &a, const GoalEvent &b)
+         { return a.time < b.time; });
 
     if (!events.empty())
     {
         cout << "\nGoal Scorers:\n";
-        for (const GoalEvent &g : events) cout << "  " << g.time << "' " << g.playerName << "\n";
+        for (const GoalEvent &g : events)
+            cout << "  " << g.time << "' " << g.playerName << "\n";
     }
     else
     {
         cout << "\n  No goals scored.\n";
     }
 
-    cout << "\n"<< t1.name << "  " << homeGoals << " - " << awayGoals << "  " << t2.name<< "\n";
+    cout << "\n"
+         << t1.name << "  " << homeGoals << " - " << awayGoals << "  " << t2.name << "\n";
 
     if (homeGoals > awayGoals)
     {

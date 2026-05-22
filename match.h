@@ -13,7 +13,6 @@ public:
     int homeGoals{0};
     int awayGoals{0};
     int winner{0};
-
     void score(const Team& t1, const Team& t2);
 };
 

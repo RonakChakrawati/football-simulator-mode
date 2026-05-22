@@ -60,7 +60,7 @@ vector<Team> loadTeams(string filename) {
     if (!currentTeam.name.empty()) {
         teams.push_back(currentTeam);
     }
-    
+     
     file.close();
     return teams;
 }
