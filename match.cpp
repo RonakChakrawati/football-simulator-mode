@@ -54,7 +54,7 @@ void Match::score(const Team &t1, const Team &t2)
             {
                 totalDef += t2.players[j].getDefense();
             }
-        }
+        } 
         Player defender2;
         int randomDef = rand() % totalDef;
         int cDef = 0;
@@ -63,17 +63,16 @@ void Match::score(const Team &t1, const Team &t2)
             if (t2.players[j].role == "Defender")
             {
                 cDef += t2.players[j].getDefense();
-                if (randomDef < cDef)
-                {
+                if (randomDef < cDef){
                     defender2 = t2.players[j];
                     break;
                 }
             }
         }
 
-        double scoringChance = (double)attacker1.getAttack() / (attacker1.getAttack() + defender2.getDefense());
+        double scoringChance = ((double)attacker1.getAttack()+(double)t1.getTeamMidfield()) / (t2.getTeamMidfield() + defender2.getDefense() + t2.getTeamGoalkeeping() + (double)attacker1.getAttack()+(double)t1.getTeamMidfield());
         int roll = rand() % 100;
-        if (roll < scoringChance * 35)
+        if (roll < scoringChance * 20)
         {
             GoalEvent g;
             g.playerName = attacker1.name;
@@ -127,17 +126,16 @@ void Match::score(const Team &t1, const Team &t2)
             if (t1.players[j].role == "Defender")
             {
                 cDef += t1.players[j].getDefense();
-            }
-            if (randomDef < cDef)
-            {
+                if (randomDef < cDef){
                 defender1 = t1.players[j];
                 break;
+                }
             }
         }
 
-        double scoringChance = (double)attacker2.getAttack() / (attacker2.getAttack() + defender1.getDefense());
+        double scoringChance = ((double)attacker2.getAttack() + (double)t2.getTeamMidfield()) / (t1.getTeamMidfield() + defender1.getDefense() + t1.getTeamGoalkeeping() + (double)attacker2.getAttack() + (double)t2.getTeamMidfield());
         int roll = rand() % 100;
-        if (roll < scoringChance *  28)
+        if (roll < scoringChance *  20)
         {
             GoalEvent g;
             g.playerName = attacker2.name;

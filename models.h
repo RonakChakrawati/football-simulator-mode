@@ -53,43 +53,48 @@ public:
   int getTeamAttack() const
   {
     int attackAvg{0};
-    if (players.empty())
-      return 0;
-    for (const Player &p : players)
-    {
-      attackAvg += p.getAttack();
+    if (players.empty()) return 0;
+    int count{0};
+    for (const Player &p : players){
+      if(p.role == "Attacker"){
+        count++;
+        attackAvg += p.getAttack();
+      }
     }
-    return attackAvg / (int)players.size();
+    if(count == 0) return 0;
+    return attackAvg / count;
   }
 
   int getTeamDefense() const
   {
     int defendAvg{0};
-
-    if (players.empty())
-      return 0;
-
+    if (players.empty()) return 0;
+    int count{0};
     for (const Player &p : players)
     {
-      defendAvg += p.getDefense();
+      if(p.role == "Defender"){
+        count++;
+        defendAvg += p.getDefense();
+      }
     }
-
-    return defendAvg / (int)players.size();
+    if(count == 0) return 0;
+    return defendAvg / count;
   }
 
   int getTeamMidfield() const
   {
     int midfieldAvg{0};
-
-    if (players.empty())
-      return 0;
-
+    if (players.empty()) return 0;
+    int count{0};
     for (const Player &p : players)
     {
-      midfieldAvg += p.getMidfield();
+      if(p.role == "Midfielder"){
+        count++;
+        midfieldAvg += p.getMidfield();
+      }
     }
-
-    return midfieldAvg / (int)players.size();
+    if(count == 0) return 0;
+    return midfieldAvg / count;
   }
 
   int getTeamGoalkeeping() const
@@ -101,7 +106,6 @@ public:
         return p.getGoalkeeping();
       }
     }
-
     return 0;
   }
 
