@@ -14,10 +14,8 @@ void Match::score(const Team &t1, const Team &t2)
     vector<GoalEvent> events;
     int adv = (t1.getTeamAttack() * 3 + t1.getTeamMidfield() * 2) - (t2.getTeamDefense() * 2 + t2.getTeamMidfield() / 2);
     int dis = (t2.getTeamAttack() * 3 + t2.getTeamMidfield() * 2) - (t1.getTeamDefense() * 2 + t1.getTeamMidfield() / 2);
-    if (adv < 0)
-        adv = 0;
-    if (dis < 0)
-        dis = 0;
+    if (adv < 0) adv = 0;
+    if (dis < 0) dis = 0;
     int chances1 = (adv / 18) + 1 + (rand() % 3);
     int chances2 = (dis / 18) + 1 + (rand() % 3);
 

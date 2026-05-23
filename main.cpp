@@ -1,6 +1,7 @@
 // project for football simulation
+
+#include "wc_loader.h"
 #include "loader.h"
-#include "data.h"
 #include "match.h"
 #include <cstdlib>
 #include <ctime>
@@ -146,8 +147,30 @@ int main()
       system("clear");
     }
 
-    else if(choice == 4){
+    else if (choice == 4)
+    {
+      system("clear");
+      cout << "=====================================\n";
+      cout << "         FIFA WORLD CUP 2026\n";
+      cout << "=====================================\n\n";
 
+      vector<Team> wcTeams = loadTeams("wc_nations.csv");
+
+      if (wcTeams.size() < 32)
+      {
+        cout << "ERROR: Could not load WC teams. Check wc_nations.csv exists.\n";
+        string back;
+        cin >> back;
+      }
+      else
+      {
+        // WorldCup wc;
+        // wc.run(wcTeams);
+        cout << "Press any number to return to menu: ";
+        string back;
+        cin >> back;
+        system("clear");
+      }
     }
 
     else if (choice == 5)
