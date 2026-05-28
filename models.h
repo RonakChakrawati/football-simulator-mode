@@ -53,47 +53,57 @@ public:
   int getTeamAttack() const
   {
     int attackAvg{0};
-    if (players.empty()) return 0;
+    if (players.empty())
+      return 0;
     int count{0};
-    for (const Player &p : players){
-      if(p.role == "Attacker"){
+    for (const Player &p : players)
+    {
+      if (p.role == "Attacker")
+      {
         count++;
         attackAvg += p.getAttack();
       }
     }
-    if(count == 0) return 0;
+    if (count == 0)
+      return 0;
     return attackAvg / count;
   }
 
   int getTeamDefense() const
   {
     int defendAvg{0};
-    if (players.empty()) return 0;
+    if (players.empty())
+      return 0;
     int count{0};
     for (const Player &p : players)
     {
-      if(p.role == "Defender"){
+      if (p.role == "Defender")
+      {
         count++;
         defendAvg += p.getDefense();
       }
     }
-    if(count == 0) return 0;
+    if (count == 0)
+      return 0;
     return defendAvg / count;
   }
 
   int getTeamMidfield() const
   {
     int midfieldAvg{0};
-    if (players.empty()) return 0;
+    if (players.empty())
+      return 0;
     int count{0};
     for (const Player &p : players)
     {
-      if(p.role == "Midfielder"){
+      if (p.role == "Midfielder")
+      {
         count++;
         midfieldAvg += p.getMidfield();
       }
     }
-    if(count == 0) return 0;
+    if (count == 0)
+      return 0;
     return midfieldAvg / count;
   }
 
@@ -134,6 +144,36 @@ public:
     cout << "TEAM GOALKEEPING : " << getTeamGoalkeeping() << "\n";
     cout << "-------------------------------------\n";
   }
+};
+
+class Standing
+{
+public:
+  Team team;
+  int points;
+  int goalsFor;
+  int goalsAgainst;
+  int goalsDiff;
+  int wins;
+  int losses;
+  int draws;
+  Standing(const Team &t) : team(t)
+  {
+    points = 0;
+    goalsFor = 0;
+    goalsAgainst = 0;
+    goalsDiff = 0;
+    wins = 0;
+    losses = 0;
+    draws = 0;
+  }
+};
+
+class Group
+{
+  public:
+  string name;
+  vector<Standing> standings;
 };
 
 #endif

@@ -1,0 +1,529 @@
+TEAM         , NAME                      , NATIONALITY  , ROLE      , POSITION, AGE, SHOOTING, PASSING, DRIBBLING, PACE, DEFENDING, PHYSICAL, GOALKEEPING
+ARGENTINA    , EMILIANO MARTINEZ         , Argentine    , Goalkeeper, GK      ,  33,       12,      58,        45,   40,        28,       72,          91
+ARGENTINA    , NAHUEL MOLINA             , Argentine    , Defender  , RB      ,  28,       66,      74,        76,   83,        77,       74,          10
+ARGENTINA    , CRISTIAN ROMERO           , Argentine    , Defender  , CB      ,  28,       42,      72,        67,   74,        89,       84,           8
+ARGENTINA    , LISANDRO MARTINEZ         , Argentine    , Defender  , CB      ,  28,       38,      70,        64,   68,        87,       82,           8
+ARGENTINA    , NICOLAS TAGLIAFICO        , Argentine    , Defender  , LB      ,  33,       58,      72,        70,   72,        76,       72,           8
+ARGENTINA    , RODRIGO DE PAUL           , Argentine    , Midfielder, CM      ,  32,       74,      84,        82,   76,        76,       80,           5
+ARGENTINA    , ALEXIS MAC ALLISTER       , Argentine    , Midfielder, CM      ,  27,       76,      86,        82,   74,        78,       78,           5
+ARGENTINA    , ENZO FERNANDEZ            , Argentine    , Midfielder, CM      ,  25,       74,      84,        80,   72,        74,       76,           5
+ARGENTINA    , LAUTARO MARTINEZ          , Argentine    , Attacker  , ST      ,  28,       88,      76,        84,   78,        44,       82,           5
+ARGENTINA    , JULIAN ALVAREZ            , Argentine    , Attacker  , ST      ,  26,       84,      76,        84,   80,        52,       78,           5
+ARGENTINA    , LIONEL MESSI              , Argentine    , Attacker  , RW      ,  38,       91,      91,        93,   78,        36,       68,           5
+FRANCE       , MIKE MAIGNAN              , French       , Goalkeeper, GK      ,  31,       10,      62,        42,   45,        25,       74,          90
+FRANCE       , JULES KOUNDE              , French       , Defender  , RB      ,  28,       62,      78,        80,   84,        84,       78,           8
+FRANCE       , WILLIAM SALIBA            , French       , Defender  , CB      ,  25,       40,      76,        72,   78,        90,       84,           7
+FRANCE       , IBRAHIMA KONATE           , French       , Defender  , CB      ,  27,       38,      68,        70,   78,        87,       88,           7
+FRANCE       , THEO HERNANDEZ            , French       , Defender  , LB      ,  29,       74,      78,        82,   92,        76,       82,           7
+FRANCE       , AURELIEN TCHOUAMENI       , French       , Midfielder, CDM     ,  26,       70,      84,        78,   74,        84,       84,           5
+FRANCE       , EDUARDO CAMAVINGA         , French       , Midfielder, CM      ,  24,       72,      82,        84,   82,        80,       80,           5
+FRANCE       , ANTOINE GRIEZMANN         , French       , Midfielder, CAM     ,  35,       86,      88,        88,   76,        58,       74,           5
+FRANCE       , OUSMANE DEMBELE           , French       , Attacker  , RW      ,  29,       86,      82,        92,   95,        40,       62,           5
+FRANCE       , KYLIAN MBAPPE             , French       , Attacker  , LW      ,  27,       94,      82,        93,   99,        38,       76,           5
+FRANCE       , RANDAL KOLO MUANI         , French       , Attacker  , ST      ,  27,       82,      74,        82,   90,        42,       78,           5
+BRAZIL       , ALISSON                   , Brazilian    , Goalkeeper, GK      ,  34,       12,      60,        42,   38,        30,       74,          90
+BRAZIL       , DANILO                    , Brazilian    , Defender  , RB      ,  35,       60,      74,        74,   72,        82,       78,           8
+BRAZIL       , MARQUINHOS                , Brazilian    , Defender  , CB      ,  32,       42,      80,        74,   76,        88,       82,           8
+BRAZIL       , GABRIEL MAGALHAES         , Brazilian    , Defender  , CB      ,  29,       40,      72,        68,   70,        88,       86,           7
+BRAZIL       , GUILHERME ARANA           , Brazilian    , Defender  , LB      ,  29,       68,      78,        80,   82,        76,       74,           7
+BRAZIL       , BRUNO GUIMARAES           , Brazilian    , Midfielder, CM      ,  29,       74,      86,        84,   74,        78,       80,           5
+BRAZIL       , JOELINTON                 , Brazilian    , Midfielder, CM      ,  30,       72,      76,        78,   74,        82,       88,           5
+BRAZIL       , LUCAS PAQUETA             , Brazilian    , Midfielder, CAM     ,  29,       80,      84,        86,   76,        62,       74,           5
+BRAZIL       , RODRYGO                   , Brazilian    , Attacker  , RW      ,  26,       86,      82,        90,   90,        42,       68,           5
+BRAZIL       , VINICIUS JR               , Brazilian    , Attacker  , LW      ,  26,       92,      78,        94,   98,        34,       70,           5
+BRAZIL       , ENDRICK                   , Brazilian    , Attacker  , ST      ,  20,       86,      72,        84,   88,        38,       76,           5
+SPAIN        , UNAI SIMON                , Spanish      , Goalkeeper, GK      ,  29,       10,      60,        42,   38,        32,       72,          88
+SPAIN        , DANI CARVAJAL             , Spanish      , Defender  , RB      ,  34,       68,      82,        78,   80,        84,       80,           7
+SPAIN        , PAU CUBARSI               , Spanish      , Defender  , CB      ,  19,       36,      82,        74,   70,        86,       78,           7
+SPAIN        , ROBIN LE NORMAND          , Spanish      , Defender  , CB      ,  30,       40,      76,        70,   68,        86,       82,           7
+SPAIN        , ALEJANDRO BALDE           , Spanish      , Defender  , LB      ,  23,       68,      80,        86,   96,        74,       72,           7
+SPAIN        , RODRI                     , Spanish      , Midfielder, CDM     ,  30,       82,      92,        86,   68,        88,       84,           5
+SPAIN        , PEDRI                     , Spanish      , Midfielder, CM      ,  24,       76,      92,        92,   78,        68,       72,           5
+SPAIN        , GAVI                      , Spanish      , Midfielder, CM      ,  22,       74,      86,        86,   78,        76,       82,           5
+SPAIN        , LAMINE YAMAL              , Spanish      , Attacker  , RW      ,  19,       86,      84,        94,   92,        38,       60,           5
+SPAIN        , NICO WILLIAMS             , Spanish      , Attacker  , LW      ,  24,       84,      76,        88,   97,        42,       68,           5
+SPAIN        , ALVARO MORATA             , Spanish      , Attacker  , ST      ,  34,       84,      72,        78,   78,        42,       78,           5
+PORTUGAL     , DIOGO COSTA               , Portuguese   , Goalkeeper, GK      ,  27,       12,      64,        44,   38,        34,       74,          89
+PORTUGAL     , JOAO CANCELO              , Portuguese   , Defender  , RB      ,  32,       72,      86,        88,   84,        74,       72,           7
+PORTUGAL     , RUBEN DIAS                , Portuguese   , Defender  , CB      ,  29,       42,      78,        68,   66,        90,       86,           7
+PORTUGAL     , GONCALO INACIO            , Portuguese   , Defender  , CB      ,  25,       40,      80,        72,   72,        86,       80,           7
+PORTUGAL     , NUNO MENDES               , Portuguese   , Defender  , LB      ,  24,       70,      80,        84,   94,        78,       78,           7
+PORTUGAL     , VITINHA                   , Portuguese   , Midfielder, CM      ,  26,       76,      90,        90,   76,        66,       70,           5
+PORTUGAL     , BRUNO FERNANDES           , Portuguese   , Midfielder, CAM     ,  32,       86,      92,        86,   74,        62,       72,           5
+PORTUGAL     , BERNARDO SILVA            , Portuguese   , Midfielder, RW      ,  32,       82,      90,        92,   78,        62,       68,           5
+PORTUGAL     , RAFAEL LEAO               , Portuguese   , Attacker  , LW      ,  27,       88,      78,        90,   95,        36,       76,           5
+PORTUGAL     , GONCALO RAMOS             , Portuguese   , Attacker  , ST      ,  25,       84,      72,        78,   80,        40,       80,           5
+PORTUGAL     , CRISTIANO RONALDO         , Portuguese   , Attacker  , ST      ,  41,       88,      76,        82,   72,        34,       78,           5
+ENGLAND      , JORDAN PICKFORD           , English      , Goalkeeper, GK      ,  32,       12,      66,        44,   42,        30,       70,          87
+ENGLAND      , TRENT ALEXANDER-ARNOLD    , English      , Defender  , RB      ,  28,       76,      92,        84,   78,        74,       70,           7
+ENGLAND      , JOHN STONES               , English      , Defender  , CB      ,  32,       44,      82,        78,   68,        86,       80,           7
+ENGLAND      , MARC GUEHI                , English      , Defender  , CB      ,  26,       40,      74,        72,   74,        84,       82,           7
+ENGLAND      , LUKE SHAW                 , English      , Defender  , LB      ,  31,       68,      82,        80,   76,        78,       76,           7
+ENGLAND      , DECLAN RICE               , English      , Midfielder, CDM     ,  27,       76,      86,        82,   76,        86,       86,           5
+ENGLAND      , JUDE BELLINGHAM           , English      , Midfielder, CM      ,  23,       88,      88,        90,   82,        78,       84,           5
+ENGLAND      , PHIL FODEN                , English      , Midfielder, CAM     ,  26,       86,      88,        92,   84,        52,       66,           5
+ENGLAND      , BUKAYO SAKA               , English      , Attacker  , RW      ,  25,       88,      84,        90,   90,        46,       72,           5
+ENGLAND      , HARRY KANE                , English      , Attacker  , ST      ,  33,       92,      84,        84,   70,        48,       82,           5
+ENGLAND      , COLE PALMER               , English      , Attacker  , LW      ,  24,       86,      88,        90,   82,        42,       64,           5
+GERMANY      , MARC-ANDRE TER STEGEN     , German       , Goalkeeper, GK      ,  34,       10,      68,        44,   40,        28,       72,          89
+GERMANY      , JOSHUA KIMMICH            , German       , Defender  , RB      ,  32,       74,      90,        84,   76,        82,       74,           7
+GERMANY      , ANTONIO RUDIGER           , German       , Defender  , CB      ,  33,       42,      74,        66,   78,        90,       88,           7
+GERMANY      , JONATHAN TAH              , German       , Defender  , CB      ,  30,       38,      72,        64,   68,        88,       86,           7
+GERMANY      , DAVID RAUM                , German       , Defender  , LB      ,  29,       68,      80,        78,   84,        76,       74,           7
+GERMANY      , TONI KROOS                , German       , Midfielder, CM      ,  36,       80,      94,        86,   52,        72,       70,           5
+GERMANY      , JAMAL MUSIALA             , German       , Midfielder, CAM     ,  23,       88,      88,        94,   88,        52,       66,           5
+GERMANY      , FLORIAN WIRTZ             , German       , Midfielder, CAM     ,  23,       86,      88,        92,   84,        50,       64,           5
+GERMANY      , LEROY SANE                , German       , Attacker  , RW      ,  30,       86,      80,        88,   94,        38,       68,           5
+GERMANY      , KAI HAVERTZ               , German       , Attacker  , ST      ,  27,       84,      82,        84,   76,        48,       74,           5
+GERMANY      , DENIZ UNDAV               , German       , Attacker  , ST      ,  30,       82,      74,        80,   72,        40,       76,           5
+ITALY        , GIANLUIGI DONNARUMMA      , Italian      , Goalkeeper, GK      ,  27,       10,      58,        40,   42,        28,       78,          91
+ITALY        , GIOVANNI DI LORENZO       , Italian      , Defender  , RB      ,  33,       66,      78,        76,   78,        84,       76,           7
+ITALY        , ALESSANDRO BASTONI        , Italian      , Defender  , CB      ,  27,       42,      82,        74,   72,        88,       82,           7
+ITALY        , RICCARDO CALAFIORI        , Italian      , Defender  , CB      ,  24,       48,      78,        76,   74,        84,       80,           7
+ITALY        , FEDERICO DIMARCO          , Italian      , Defender  , LB      ,  29,       76,      84,        82,   82,        72,       70,           7
+ITALY        , NICOLO BARELLA            , Italian      , Midfielder, CM      ,  29,       80,      88,        86,   82,        76,       78,           5
+ITALY        , SANDRO TONALI             , Italian      , Midfielder, CDM     ,  26,       74,      84,        80,   76,        82,       82,           5
+ITALY        , LORENZO PELLEGRINI        , Italian      , Midfielder, CAM     ,  30,       80,      84,        84,   74,        64,       72,           5
+ITALY        , FEDERICO CHIESA           , Italian      , Attacker  , LW      ,  28,       86,      76,        86,   92,        40,       72,           5
+ITALY        , MATTEO RETEGUI            , Italian      , Attacker  , ST      ,  27,       84,      70,        76,   74,        42,       80,           5
+ITALY        , GIACOMO RASPADORI         , Italian      , Attacker  , ST      ,  26,       82,      78,        84,   78,        40,       70,           5
+NETHERLANDS  , BART VERBRUGGEN           , Dutch        , Goalkeeper, GK      ,  24,       10,      62,        42,   44,        26,       72,          87
+NETHERLANDS  , DENZEL DUMFRIES           , Dutch        , Defender  , RB      ,  30,       74,      76,        78,   88,        80,       86,           7
+NETHERLANDS  , VIRGIL VAN DIJK           , Dutch        , Defender  , CB      ,  35,       44,      78,        72,   70,        92,       90,           7
+NETHERLANDS  , MATTHIJS DE LIGT          , Dutch        , Defender  , CB      ,  27,       40,      74,        68,   68,        88,       86,           7
+NETHERLANDS  , NATHAN AKE                , Dutch        , Defender  , LB      ,  31,       58,      78,        76,   74,        86,       80,           7
+NETHERLANDS  , FRANKIE DE JONG           , Dutch        , Midfielder, CM      ,  29,       76,      90,        90,   80,        72,       72,           5
+NETHERLANDS  , TIJANI REIJNDERS          , Dutch        , Midfielder, CM      ,  27,       80,      84,        86,   80,        68,       72,           5
+NETHERLANDS  , XAVI SIMONS               , Dutch        , Midfielder, CAM     ,  23,       84,      84,        90,   88,        52,       66,           5
+NETHERLANDS  , JEREMY FRIMPONG           , Dutch        , Attacker  , RW      ,  25,       82,      78,        88,   98,        54,       68,           5
+NETHERLANDS  , CODY GAKPO                , Dutch        , Attacker  , LW      ,  27,       86,      80,        86,   84,        42,       76,           5
+NETHERLANDS  , MEMPHIS DEPAY             , Dutch        , Attacker  , ST      ,  32,       84,      82,        86,   82,        38,       78,           5
+BELGIUM      , THIBAUT COURTOIS          , Belgian      , Goalkeeper, GK      ,  34,       10,      58,        40,   38,        30,       78,          92
+BELGIUM      , TIMOTHY CASTAGNE          , Belgian      , Defender  , RB      ,  31,       66,      76,        76,   78,        80,       76,           7
+BELGIUM      , WOUT FAES                 , Belgian      , Defender  , CB      ,  28,       38,      70,        66,   68,        84,       82,           7
+BELGIUM      , ZENO DEBAST               , Belgian      , Defender  , CB      ,  22,       40,      74,        70,   72,        82,       78,           7
+BELGIUM      , ARTHUR THEATE             , Belgian      , Defender  , LB      ,  26,       62,      74,        72,   76,        82,       80,           7
+BELGIUM      , AMADOU ONANA              , Belgian      , Midfielder, CDM     ,  25,       72,      78,        76,   76,        84,       88,           5
+BELGIUM      , KEVIN DE BRUYNE           , Belgian      , Midfielder, CAM     ,  35,       88,      95,        88,   74,        58,       72,           5
+BELGIUM      , YOURI TIELEMANS           , Belgian      , Midfielder, CM      ,  29,       78,      86,        82,   68,        70,       74,           5
+BELGIUM      , JEREMY DOKU               , Belgian      , Attacker  , LW      ,  24,       84,      78,        92,   98,        36,       60,           5
+BELGIUM      , LEANDRO TROSSARD          , Belgian      , Attacker  , RW      ,  31,       84,      82,        86,   82,        42,       68,           5
+BELGIUM      , ROMELU LUKAKU             , Belgian      , Attacker  , ST      ,  33,       88,      72,        78,   78,        38,       90,           5
+URUGUAY      , SERGIO ROCHET             , Uruguayan    , Goalkeeper, GK      ,  33,       10,      56,        40,   38,        30,       74,          86
+URUGUAY      , RONALD ARAUJO             , Uruguayan    , Defender  , CB      ,  27,       42,      72,        68,   82,        90,       88,           7
+URUGUAY      , JOSE MARIA GIMENEZ        , Uruguayan    , Defender  , CB      ,  31,       38,      70,        62,   68,        90,       86,           7
+URUGUAY      , MATHIAS OLIVERA           , Uruguayan    , Defender  , LB      ,  28,       60,      74,        72,   78,        82,       80,           7
+URUGUAY      , GUILLERMO VARELA          , Uruguayan    , Defender  , RB      ,  33,       58,      72,        70,   74,        78,       76,           7
+URUGUAY      , FEDERICO VALVERDE         , Uruguayan    , Midfielder, CM      ,  28,       86,      86,        84,   88,        80,       84,           5
+URUGUAY      , MANUEL UGARTE             , Uruguayan    , Midfielder, CDM     ,  25,       68,      78,        74,   76,        88,       84,           5
+URUGUAY      , NICOLAS DE LA CRUZ        , Uruguayan    , Midfielder, CAM     ,  29,       78,      84,        86,   82,        66,       70,           5
+URUGUAY      , DARWIN NUNEZ              , Uruguayan    , Attacker  , ST      ,  27,       88,      70,        80,   94,        42,       84,           5
+URUGUAY      , FACUNDO PELLISTRI         , Uruguayan    , Attacker  , RW      ,  25,       78,      76,        84,   90,        40,       64,           5
+URUGUAY      , MAXIMILIANO ARAUJO        , Uruguayan    , Attacker  , LW      ,  26,       80,      78,        82,   88,        42,       70,           5
+CROATIA      , DOMINIK LIVAKOVIC         , Croatian     , Goalkeeper, GK      ,  32,       10,      58,        42,   40,        28,       72,          88
+CROATIA      , JOSKO GVARDIOL            , Croatian     , Defender  , CB      ,  25,       62,      78,        76,   82,        90,       86,           7
+CROATIA      , JOSEP SUTALO              , Croatian     , Defender  , CB      ,  26,       40,      72,        68,   72,        86,       82,           7
+CROATIA      , JOSIP JURANOVIC           , Croatian     , Defender  , RB      ,  31,       66,      76,        74,   82,        78,       74,           7
+CROATIA      , BORNA SOSA                , Croatian     , Defender  , LB      ,  28,       68,      82,        78,   80,        74,       72,           7
+CROATIA      , LUKA MODRIC               , Croatian     , Midfielder, CM      ,  41,       82,      94,        90,   70,        70,       68,           5
+CROATIA      , MATEO KOVACIC             , Croatian     , Midfielder, CM      ,  32,       76,      88,        88,   78,        72,       72,           5
+CROATIA      , MARCELO BROZOVIC          , Croatian     , Midfielder, CDM     ,  34,       72,      86,        80,   72,        82,       78,           5
+CROATIA      , LOVRO MAJER               , Croatian     , Attacker  , RW      ,  28,       80,      84,        86,   78,        46,       66,           5
+CROATIA      , ANDREJ KRAMARIC           , Croatian     , Attacker  , ST      ,  35,       84,      80,        84,   74,        42,       72,           5
+CROATIA      , IVAN PERISIC              , Croatian     , Attacker  , LW      ,  38,       82,      80,        82,   78,        58,       74,           5
+MOROCCO      , YASSINE BOUNOU            , Moroccan     , Goalkeeper, GK      ,  35,       10,      54,        38,   40,        30,       76,          90
+MOROCCO      , ACHRAF HAKIMI             , Moroccan     , Defender  , RB      ,  28,       78,      82,        84,   96,        78,       74,           7
+MOROCCO      , NAIF AGUERD               , Moroccan     , Defender  , CB      ,  30,       40,      72,        66,   72,        86,       82,           7
+MOROCCO      , ROMAIN SAISS              , Moroccan     , Defender  , CB      ,  36,       38,      70,        64,   66,        86,       84,           7
+MOROCCO      , NOUSSAIR MAZRAOUI         , Moroccan     , Defender  , LB      ,  29,       72,      82,        84,   84,        78,       72,           7
+MOROCCO      , SOFYAN AMRABAT            , Moroccan     , Midfielder, CDM     ,  30,       68,      80,        76,   72,        84,       84,           5
+MOROCCO      , AZZEDINE OUNAHI           , Moroccan     , Midfielder, CM      ,  26,       74,      82,        86,   80,        68,       68,           5
+MOROCCO      , BRAHIM DIAZ               , Moroccan     , Midfielder, CAM     ,  27,       84,      84,        90,   84,        48,       64,           5
+MOROCCO      , HAKIM ZIYECH              , Moroccan     , Attacker  , RW      ,  33,       84,      88,        86,   78,        40,       64,           5
+MOROCCO      , YOUSSEF EN-NESYRI         , Moroccan     , Attacker  , ST      ,  29,       84,      68,        74,   80,        42,       84,           5
+MOROCCO      , SOUFIANE RAHIMI           , Moroccan     , Attacker  , LW      ,  30,       82,      76,        84,   86,        38,       68,           5
+SENEGAL      , EDOUARD MENDY             , Senegalese   , Goalkeeper, GK      ,  34,       10,      52,        38,   40,        28,       78,          88
+SENEGAL      , KALIDOU KOULIBALY         , Senegalese   , Defender  , CB      ,  35,       42,      70,        64,   72,        90,       88,           7
+SENEGAL      , ABDOU DIALLO              , Senegalese   , Defender  , CB      ,  30,       38,      68,        64,   70,        84,       82,           7
+SENEGAL      , YOUSSOUF SABALY           , Senegalese   , Defender  , RB      ,  33,       62,      74,        74,   78,        78,       74,           7
+SENEGAL      , ISMAIL JAKOBS             , Senegalese   , Defender  , LB      ,  27,       64,      72,        74,   88,        76,       72,           7
+SENEGAL      , IDRISSA GUEYE             , Senegalese   , Midfielder, CDM     ,  36,       68,      78,        74,   72,        84,       78,           5
+SENEGAL      , PAPE MATAR SARR           , Senegalese   , Midfielder, CM      ,  24,       74,      80,        78,   80,        74,       76,           5
+SENEGAL      , LAMINE CAMARA             , Senegalese   , Midfielder, CAM     ,  22,       76,      82,        82,   80,        68,       70,           5
+SENEGAL      , ISMAILA SARR              , Senegalese   , Attacker  , RW      ,  28,       82,      76,        84,   92,        40,       70,           5
+SENEGAL      , NICOLAS JACKSON           , Senegalese   , Attacker  , ST      ,  25,       84,      72,        82,   88,        38,       78,           5
+SENEGAL      , SADIO MANE                , Senegalese   , Attacker  , LW      ,  34,       86,      80,        86,   90,        42,       74,           5
+NIGERIA      , STANLEY NWABALI           , Nigerian     , Goalkeeper, GK      ,  30,       10,      50,        38,   42,        28,       74,          84
+NIGERIA      , OLA AINA                  , Nigerian     , Defender  , RB      ,  30,       66,      74,        76,   84,        78,       74,           7
+NIGERIA      , WILLIAM TROOST-EKONG      , Nigerian     , Defender  , CB      ,  32,       38,      68,        62,   68,        84,       84,           7
+NIGERIA      , SEMI AJAYI                , Nigerian     , Defender  , CB      ,  33,       36,      66,        60,   66,        82,       84,           7
+NIGERIA      , Zaidu SANUSI              , Nigerian     , Defender  , LB      ,  29,       60,      70,        72,   90,        76,       74,           7
+NIGERIA      , WILFRED NDIDI             , Nigerian     , Midfielder, CDM     ,  30,       68,      76,        72,   74,        88,       84,           5
+NIGERIA      , ALEX IWOBI                , Nigerian     , Midfielder, CM      ,  30,       76,      82,        84,   80,        66,       70,           5
+NIGERIA      , FRANK ONYEKA              , Nigerian     , Midfielder, CM      ,  29,       70,      76,        74,   78,        80,       82,           5
+NIGERIA      , ADEMOLA LOOKMAN           , Nigerian     , Attacker  , LW      ,  29,       86,      80,        88,   90,        40,       72,           5
+NIGERIA      , VICTOR OSIMHEN            , Nigerian     , Attacker  , ST      ,  28,       90,      68,        80,   92,        42,       86,           5
+NIGERIA      , SAMUEL CHUKWUEZE          , Nigerian     , Attacker  , RW      ,  27,       82,      76,        88,   92,        36,       66,           5
+IVORY COAST  , YAHIA FOFANA              , Ivorian      , Goalkeeper, GK      ,  26,       10,      52,        40,   42,        30,       74,          86
+IVORY COAST  , WILFRIED SINGO            , Ivorian      , Defender  , CB      ,  25,       62,      74,        72,   82,        86,       86,           7
+IVORY COAST  , ODILON KOSSOUNOU          , Ivorian      , Defender  , CB      ,  25,       40,      70,        66,   78,        88,       84,           7
+IVORY COAST  , GHISLAIN KONAN            , Ivorian      , Defender  , LB      ,  31,       62,      74,        72,   80,        78,       74,           7
+IVORY COAST  , SERGE AURIER              , Ivorian      , Defender  , RB      ,  33,       68,      76,        74,   80,        80,       78,           7
+IVORY COAST  , FRANCK KESSIE             , Ivorian      , Midfielder, CM      ,  30,       80,      82,        80,   76,        82,       88,           5
+IVORY COAST  , SEKO FOFANA               , Ivorian      , Midfielder, CM      ,  31,       82,      80,        82,   82,        76,       86,           5
+IVORY COAST  , JEAN MICHAEL SERI         , Ivorian      , Midfielder, CDM     ,  35,       72,      82,        78,   70,        74,       72,           5
+IVORY COAST  , SIMON ADINGRA             , Ivorian      , Attacker  , LW      ,  24,       82,      78,        88,   92,        40,       68,           5
+IVORY COAST  , SEBASTIEN HALLER          , Ivorian      , Attacker  , ST      ,  32,       84,      74,        78,   72,        42,       86,           5
+IVORY COAST  , NICOLAS PEPE              , Ivorian      , Attacker  , RW      ,  31,       82,      78,        86,   88,        38,       66,           5
+ALGERIA      , ANTHONY MANDREA           , Algerian     , Goalkeeper, GK      ,  30,       10,      54,        38,   40,        28,       72,          84
+ALGERIA      , AISSA MANDI               , Algerian     , Defender  , CB      ,  35,       42,      74,        68,   68,        84,       80,           7
+ALGERIA      , RYAN AIT-NOURI            , Algerian     , Defender  , LB      ,  25,       72,      80,        84,   86,        76,       72,           7
+ALGERIA      , MOHAMED AMINE TOUGAI      , Algerian     , Defender  , CB      ,  26,       38,      70,        64,   70,        84,       82,           7
+ALGERIA      , YOUSEF ATAL               , Algerian     , Defender  , RB      ,  30,       70,      76,        82,   88,        72,       70,           7
+ALGERIA      , ISMAEL BENNACER           , Algerian     , Midfielder, CM      ,  28,       74,      86,        84,   78,        74,       72,           5
+ALGERIA      , HOUSSEM AOUAR             , Algerian     , Midfielder, CAM     ,  28,       80,      84,        86,   78,        60,       66,           5
+ALGERIA      , NABIL BENTALEB            , Algerian     , Midfielder, CDM     ,  31,       72,      82,        78,   72,        78,       76,           5
+ALGERIA      , RIYAD MAHREZ              , Algerian     , Attacker  , RW      ,  35,       86,      88,        90,   82,        40,       64,           5
+ALGERIA      , AMINE GOUIRI              , Algerian     , Attacker  , ST      ,  26,       84,      78,        84,   82,        40,       72,           5
+ALGERIA      , SAID BENRAHMA             , Algerian     , Attacker  , LW      ,  31,       82,      80,        86,   84,        38,       64,           5
+EGYPT        , MOHAMED EL SHENAWY        , Egyptian     , Goalkeeper, GK      ,  38,       10,      52,        38,   38,        28,       74,          86
+EGYPT        , MOHAMED HANY              , Egyptian     , Defender  , RB      ,  30,       64,      74,        74,   78,        76,       74,           7
+EGYPT        , AHMED HEGAZI              , Egyptian     , Defender  , CB      ,  35,       36,      68,        60,   62,        86,       84,           7
+EGYPT        , MOHAMED ABDELMONEM        , Egyptian     , Defender  , CB      ,  27,       38,      70,        64,   70,        84,       82,           7
+EGYPT        , AHMED FOTOUH              , Egyptian     , Defender  , LB      ,  28,       66,      76,        76,   80,        74,       72,           7
+EGYPT        , MOHAMED ELNENY            , Egyptian     , Midfielder, CDM     ,  33,       68,      80,        74,   68,        80,       76,           5
+EGYPT        , HAMDY FATHY               , Egyptian     , Midfielder, CM      ,  31,       70,      78,        74,   72,        80,       80,           5
+EGYPT        , EMAM ASHOUR               , Egyptian     , Midfielder, CAM     ,  28,       78,      82,        82,   80,        68,       72,           5
+EGYPT        , MOHAMED SALAH             , Egyptian     , Attacker  , RW      ,  34,       92,      84,        90,   90,        42,       70,           5
+EGYPT        , MOSTAFA MOHAMED           , Egyptian     , Attacker  , ST      ,  29,       82,      70,        76,   74,        42,       82,           5
+EGYPT        , OMAR MARMOUSH             , Egyptian     , Attacker  , LW      ,  27,       86,      80,        86,   90,        40,       72,           5
+CAMEROON     , ANDRE ONANA               , Cameroonian  , Goalkeeper, GK      ,  31,       12,      68,        52,   50,        30,       76,          88
+CAMEROON     , NOUHOU TOLO               , Cameroonian  , Defender  , LB      ,  29,       60,      70,        72,   84,        82,       82,           7
+CAMEROON     , CHRISTOPHER WOOH          , Cameroonian  , Defender  , CB      ,  25,       38,      68,        62,   72,        86,       84,           7
+CAMEROON     , JEAN-CHARLES CASTELLETTO  , Cameroonian  , Defender  , CB      ,  31,       38,      70,        64,   70,        84,       82,           7
+CAMEROON     , COLLINS FAI               , Cameroonian  , Defender  , RB      ,  33,       64,      72,        72,   80,        74,       72,           7
+CAMEROON     , ANDRE-FRANK ZAMBO ANGUISSA, Cameroonian  , Midfielder, CM      ,  31,       78,      82,        80,   76,        82,       86,           5
+CAMEROON     , MARTIN HONGA              , Cameroonian  , Midfielder, CDM     ,  27,       70,      76,        74,   72,        82,       82,           5
+CAMEROON     , CARLOS BALEBA             , Cameroonian  , Midfielder, CM      ,  22,       74,      78,        78,   82,        80,       84,           5
+CAMEROON     , BRYAN MBEUMO              , Cameroonian  , Attacker  , RW      ,  27,       84,      78,        84,   88,        42,       72,           5
+CAMEROON     , VINCENT ABOUBAKAR         , Cameroonian  , Attacker  , ST      ,  34,       84,      70,        76,   74,        40,       84,           5
+CAMEROON     , KARL TOKO EKAMBI          , Cameroonian  , Attacker  , LW      ,  33,       80,      74,        80,   84,        38,       72,           5
+TUNISIA      , BECHIR BEN SAID           , Tunisian     , Goalkeeper, GK      ,  34,       10,      50,        36,   38,        28,       72,          84
+TUNISIA      , WAJDI KECHRIDA            , Tunisian     , Defender  , RB      ,  31,       62,      72,        72,   80,        76,       74,           7
+TUNISIA      , MONTASSAR TALBI           , Tunisian     , Defender  , CB      ,  28,       38,      68,        62,   68,        86,       84,           7
+TUNISIA      , YASSINE MERIAH            , Tunisian     , Defender  , CB      ,  33,       36,      68,        60,   64,        84,       82,           7
+TUNISIA      , ALI MAALOUL               , Tunisian     , Defender  , LB      ,  35,       70,      80,        78,   74,        74,       70,           7
+TUNISIA      , ELLYES SKHIRI             , Tunisian     , Midfielder, CDM     ,  31,       72,      80,        76,   70,        82,       80,           5
+TUNISIA      , AISSA LAIDOUNI            , Tunisian     , Midfielder, CM      ,  29,       74,      78,        76,   76,        82,       84,           5
+TUNISIA      , ANIS BEN SLIMANE          , Tunisian     , Midfielder, CAM     ,  25,       76,      80,        80,   76,        68,       72,           5
+TUNISIA      , YOUSSEF MSAKNI            , Tunisian     , Attacker  , LW      ,  36,       82,      80,        84,   78,        38,       66,           5
+TUNISIA      , SEIFEDDINE JAZIRI         , Tunisian     , Attacker  , ST      ,  32,       78,      70,        74,   76,        40,       78,           5
+TUNISIA      , ELYES JEBALI              , Tunisian     , Attacker  , RW      ,  34,       80,      76,        80,   78,        38,       70,           5
+UNITED STATES, MATT TURNER               , American     , Goalkeeper, GK      ,  32,       10,      58,        42,   44,        30,       74,          84
+UNITED STATES, SERGINO DEST              , American     , Defender  , RB      ,  26,       70,      78,        82,   88,        72,       68,           7
+UNITED STATES, CHRIS RICHARDS            , American     , Defender  , CB      ,  26,       40,      72,        68,   74,        84,       82,           7
+UNITED STATES, TIM REAM                  , American     , Defender  , CB      ,  39,       36,      74,        64,   58,        82,       76,           7
+UNITED STATES, ANTONEE ROBINSON          , American     , Defender  , LB      ,  29,       68,      76,        78,   92,        76,       74,           7
+UNITED STATES, TYLER ADAMS               , American     , Midfielder, CDM     ,  27,       70,      78,        76,   82,        86,       84,           5
+UNITED STATES, WESTON MCKENNIE           , American     , Midfielder, CM      ,  28,       78,      80,        78,   76,        78,       84,           5
+UNITED STATES, GIO REYNA                 , American     , Midfielder, CAM     ,  24,       82,      84,        88,   78,        58,       64,           5
+UNITED STATES, CHRISTIAN PULISIC         , American     , Attacker  , LW      ,  28,       86,      82,        88,   90,        42,       68,           5
+UNITED STATES, FOLARIN BALOGUN           , American     , Attacker  , ST      ,  25,       84,      72,        80,   86,        40,       74,           5
+UNITED STATES, TIMOTHY WEAH              , American     , Attacker  , RW      ,  26,       80,      76,        82,   92,        42,       70,           5
+MEXICO       , GUILLERMO OCHOA           , Mexican      , Goalkeeper, GK      ,  41,       10,      56,        40,   38,        28,       72,          86
+MEXICO       , JULIAN ARAUJO             , Mexican      , Defender  , RB      ,  25,       68,      74,        76,   84,        74,       72,           7
+MEXICO       , CESAR MONTES              , Mexican      , Defender  , CB      ,  29,       38,      70,        62,   64,        86,       84,           7
+MEXICO       , JOHAN VASQUEZ             , Mexican      , Defender  , CB      ,  27,       40,      72,        66,   70,        84,       82,           7
+MEXICO       , JESUS GALLARDO            , Mexican      , Defender  , LB      ,  31,       66,      76,        76,   80,        74,       72,           7
+MEXICO       , EDSON ALVAREZ             , Mexican      , Midfielder, CDM     ,  29,       72,      80,        76,   72,        88,       86,           5
+MEXICO       , LUIS CHAVEZ               , Mexican      , Midfielder, CM      ,  30,       78,      84,        80,   74,        74,       74,           5
+MEXICO       , ORBELIN PINEDA            , Mexican      , Midfielder, CAM     ,  30,       80,      82,        84,   80,        64,       68,           5
+MEXICO       , HIRVING LOZANO            , Mexican      , Attacker  , LW      ,  31,       84,      78,        84,   92,        38,       66,           5
+MEXICO       , SANTIAGO GIMENEZ          , Mexican      , Attacker  , ST      ,  25,       86,      72,        80,   82,        42,       80,           5
+MEXICO       , ULESSES ANTUNA            , Mexican      , Attacker  , RW      ,  28,       78,      74,        80,   90,        36,       64,           5
+CANADA       , MAXIME CREPEAU            , Canadian     , Goalkeeper, GK      ,  32,       10,      54,        40,   42,        30,       72,          84
+CANADA       , ALISTAIR JOHNSTON         , Canadian     , Defender  , RB      ,  28,       66,      74,        74,   84,        80,       78,           7
+CANADA       , MOISE BOMBISO             , Canadian     , Defender  , CB      ,  25,       38,      68,        62,   72,        82,       82,           7
+CANADA       , DEREK CORNELIUS           , Canadian     , Defender  , CB      ,  28,       38,      70,        64,   70,        84,       84,           7
+CANADA       , ALPHONSO DAVIES           , Canadian     , Defender  , LB      ,  26,       80,      82,        86,   98,        76,       74,           7
+CANADA       , STEPHEN EUSTAQUIO         , Canadian     , Midfielder, CDM     ,  30,       72,      82,        78,   72,        82,       80,           5
+CANADA       , ISMAEL KONE               , Canadian     , Midfielder, CM      ,  24,       74,      80,        82,   82,        74,       74,           5
+CANADA       , JONATHAN OSORIO           , Canadian     , Midfielder, CAM     ,  34,       76,      82,        82,   74,        68,       68,           5
+CANADA       , JONATHAN DAVID            , Canadian     , Attacker  , ST      ,  26,       88,      76,        84,   84,        42,       74,           5
+CANADA       , CYLE LARIN                , Canadian     , Attacker  , LW      ,  31,       82,      72,        76,   78,        40,       80,           5
+CANADA       , TAJON BUCHANAN            , Canadian     , Attacker  , RW      ,  27,       80,      76,        84,   92,        40,       70,           5
+COSTA RICA   , PATRICK SEQUEIRA          , Costa Rican  , Goalkeeper, GK      ,  27,       10,      52,        38,   40,        28,       74,          84
+COSTA RICA   , CARLOS MARTINEZ           , Costa Rican  , Defender  , RB      ,  27,       62,      72,        72,   82,        74,       72,           7
+COSTA RICA   , FRANCISCO CALVO           , Costa Rican  , Defender  , CB      ,  33,       38,      70,        64,   64,        84,       82,           7
+COSTA RICA   , JUAN PABLO VARGAS         , Costa Rican  , Defender  , CB      ,  31,       38,      68,        62,   66,        82,       82,           7
+COSTA RICA   , JOSEPH MORA               , Costa Rican  , Defender  , LB      ,  33,       60,      72,        70,   78,        74,       72,           7
+COSTA RICA   , ORLANDO GALO              , Costa Rican  , Midfielder, CDM     ,  26,       68,      76,        74,   72,        82,       82,           5
+COSTA RICA   , BRANDON AGUILERA          , Costa Rican  , Midfielder, CM      ,  22,       74,      80,        82,   78,        68,       70,           5
+COSTA RICA   , CARLOS MORA               , Costa Rican  , Midfielder, CAM     ,  24,       76,      78,        80,   80,        64,       68,           5
+COSTA RICA   , JOEL CAMPBELL             , Costa Rican  , Attacker  , RW      ,  34,       80,      78,        82,   82,        42,       70,           5
+COSTA RICA   , MANFRED UGALDE            , Costa Rican  , Attacker  , ST      ,  24,       82,      72,        80,   84,        40,       72,           5
+COSTA RICA   , WARREN MADRIGAL           , Costa Rican  , Attacker  , LW      ,  21,       78,      74,        78,   82,        38,       68,           5
+PANAMA       , ORLANDO MOSQUERA          , Panamanian   , Goalkeeper, GK      ,  31,       10,      50,        38,   40,        28,       72,          82
+PANAMA       , MICHAEL MURILLO           , Panamanian   , Defender  , RB      ,  30,       68,      74,        76,   84,        78,       76,           7
+PANAMA       , FIDEL ESCOBAR             , Panamanian   , Defender  , CB      ,  31,       36,      68,        60,   64,        84,       84,           7
+PANAMA       , ANDRES ANDRADE            , Panamanian   , Defender  , CB      ,  27,       38,      70,        64,   72,        84,       82,           7
+PANAMA       , ERIC DAVIS                , Panamanian   , Defender  , LB      ,  35,       64,      76,        74,   76,        74,       72,           7
+PANAMA       , ADALBERTO CARRASQUILLA    , Panamanian   , Midfielder, CM      ,  28,       76,      84,        84,   80,        72,       72,           5
+PANAMA       , ANIBAL GODOY              , Panamanian   , Midfielder, CDM     ,  36,       68,      78,        74,   68,        80,       78,           5
+PANAMA       , CRISTIAN MARTINEZ         , Panamanian   , Midfielder, CAM     ,  29,       74,      78,        80,   78,        68,       70,           5
+PANAMA       , EDGAR BARCENAS            , Panamanian   , Attacker  , LW      ,  32,       78,      76,        80,   82,        38,       68,           5
+PANAMA       , JOSE FAJARDO              , Panamanian   , Attacker  , ST      ,  32,       80,      70,        76,   80,        40,       74,           5
+PANAMA       , ISMAEL DIAZ               , Panamanian   , Attacker  , RW      ,  29,       80,      74,        82,   86,        38,       68,           5
+JAPAN        , ZION SUZUKI               , Japanese     , Goalkeeper, GK      ,  24,       10,      58,        44,   46,        30,       74,          86
+JAPAN        , HIROKI ITO                , Japanese     , Defender  , CB      ,  27,       42,      74,        70,   72,        86,       84,           7
+JAPAN        , TAKEHIRO TOMIYASU         , Japanese     , Defender  , CB      ,  27,       48,      76,        72,   78,        88,       86,           7
+JAPAN        , YUKINARI SUGAWARA         , Japanese     , Defender  , RB      ,  25,       68,      78,        80,   84,        76,       72,           7
+JAPAN        , KAORU MITOMA              , Japanese     , Defender  , LB      ,  29,       80,      82,        90,   94,        62,       68,           7
+JAPAN        , WATARU ENDO               , Japanese     , Midfielder, CDM     ,  33,       72,      80,        76,   72,        88,       86,           5
+JAPAN        , HIDEMASA MORITA           , Japanese     , Midfielder, CM      ,  31,       74,      82,        80,   74,        78,       76,           5
+JAPAN        , DAICHI KAMADA             , Japanese     , Midfielder, CAM     ,  30,       80,      86,        86,   78,        66,       68,           5
+JAPAN        , TAKEFUSA KUBO             , Japanese     , Attacker  , RW      ,  25,       86,      84,        90,   86,        42,       66,           5
+JAPAN        , AYASE UEDA                , Japanese     , Attacker  , ST      ,  28,       84,      72,        78,   80,        40,       76,           5
+JAPAN        , JUNYA ITO                 , Japanese     , Attacker  , LW      ,  33,       82,      78,        84,   92,        38,       68,           5
+SOUTH KOREA  , KIM SEUNG-GYU             , South Korean , Goalkeeper, GK      ,  36,       10,      56,        40,   42,        30,       72,          84
+SOUTH KOREA  , KIM MIN-JAE               , South Korean , Defender  , CB      ,  30,       42,      74,        68,   78,        92,       88,           7
+SOUTH KOREA  , JUNG SEUNG-HYUN           , South Korean , Defender  , CB      ,  32,       38,      70,        64,   68,        86,       84,           7
+SOUTH KOREA  , KIM JIN-SU                , South Korean , Defender  , LB      ,  34,       66,      76,        76,   78,        76,       72,           7
+SOUTH KOREA  , SEOL YOUNG-WOO            , South Korean , Defender  , RB      ,  28,       64,      74,        74,   82,        76,       74,           7
+SOUTH KOREA  , HWANG IN-BEOM             , South Korean , Midfielder, CM      ,  30,       76,      84,        82,   76,        74,       72,           5
+SOUTH KOREA  , PARK YONG-WOO             , South Korean , Midfielder, CDM     ,  32,       68,      78,        74,   70,        82,       80,           5
+SOUTH KOREA  , LEE KANG-IN               , South Korean , Midfielder, CAM     ,  25,       84,      88,        90,   82,        58,       64,           5
+SOUTH KOREA  , SON HEUNG-MIN             , South Korean , Attacker  , LW      ,  34,       90,      84,        88,   92,        42,       70,           5
+SOUTH KOREA  , CHO GUE-SUNG              , South Korean , Attacker  , ST      ,  28,       82,      70,        76,   78,        42,       82,           5
+SOUTH KOREA  , HWANG HEE-CHAN            , South Korean , Attacker  , RW      ,  30,       84,      76,        82,   90,        40,       74,           5
+IRAN         , ALIREZA BEIRANVAND        , Iranian      , Goalkeeper, GK      ,  34,       10,      52,        38,   40,        28,       76,          86
+IRAN         , SALAH HARDANI             , Iranian      , Defender  , RB      ,  28,       62,      72,        72,   80,        76,       74,           7
+IRAN         , HOSSEIN KANANI            , Iranian      , Defender  , CB      ,  32,       38,      68,        62,   64,        86,       84,           7
+IRAN         , SHOJA KHALILZADEH         , Iranian      , Defender  , CB      ,  37,       36,      68,        60,   60,        84,       84,           7
+IRAN         , MILAD MOHAMMADI           , Iranian      , Defender  , LB      ,  32,       64,      74,        74,   84,        74,       72,           7
+IRAN         , SAEID EZATOLAHI           , Iranian      , Midfielder, CDM     ,  29,       70,      78,        74,   70,        84,       82,           5
+IRAN         , SAMAN GHODDOS             , Iranian      , Midfielder, CAM     ,  32,       78,      82,        82,   74,        64,       68,           5
+IRAN         , ALI GHOLIZADEH            , Iranian      , Midfielder, CM      ,  30,       76,      80,        84,   82,        62,       66,           5
+IRAN         , MEHDI TAREMI              , Iranian      , Attacker  , ST      ,  34,       88,      78,        82,   78,        42,       80,           5
+IRAN         , SARDAR AZMOUN             , Iranian      , Attacker  , ST      ,  32,       84,      72,        78,   76,        40,       82,           5
+IRAN         , ALIREZA JAHANBAKHSH       , Iranian      , Attacker  , RW      ,  33,       80,      78,        82,   80,        38,       68,           5
+SAUDI ARABIA , MOHAMMED AL OWAIS         , Saudi        , Goalkeeper, GK      ,  35,       10,      50,        38,   40,        28,       72,          84
+SAUDI ARABIA , SAUD ABDULHAMID           , Saudi        , Defender  , RB      ,  27,       68,      74,        76,   90,        76,       74,           7
+SAUDI ARABIA , ALI AL BULAYHI            , Saudi        , Defender  , CB      ,  37,       36,      68,        60,   62,        84,       84,           7
+SAUDI ARABIA , HASSAN KADESH             , Saudi        , Defender  , CB      ,  33,       38,      70,        62,   66,        84,       82,           7
+SAUDI ARABIA , YASSER AL SHAHRANI        , Saudi        , Defender  , LB      ,  34,       64,      74,        74,   82,        74,       72,           7
+SAUDI ARABIA , MOHAMMED KANNO            , Saudi        , Midfielder, CDM     ,  31,       72,      78,        74,   70,        84,       84,           5
+SAUDI ARABIA , SALEM AL DAWSARI          , Saudi        , Midfielder, CAM     ,  35,       84,      82,        86,   84,        60,       66,           5
+SAUDI ARABIA , MUSAB AL JUWAYR           , Saudi        , Midfielder, CM      ,  23,       76,      80,        80,   78,        68,       70,           5
+SAUDI ARABIA , FIRAS AL BIRAIKAN         , Saudi        , Attacker  , ST      ,  25,       82,      72,        76,   78,        40,       80,           5
+SAUDI ARABIA , ABDULRAHMAN GHAREEB       , Saudi        , Attacker  , LW      ,  28,       80,      76,        84,   88,        36,       64,           5
+SAUDI ARABIA , AIMAN YAHYA               , Saudi        , Attacker  , RW      ,  24,       78,      74,        82,   86,        36,       66,           5
+QATAR        , MESHAAL BARSHAM           , Qatari       , Goalkeeper, GK      ,  28,       10,      52,        38,   40,        28,       74,          84
+QATAR        , PEDRO MIGUEL              , Qatari       , Defender  , RB      ,  35,       64,      72,        72,   78,        76,       74,           7
+QATAR        , BOUALEM KHOUKHI           , Qatari       , Defender  , CB      ,  35,       42,      72,        66,   68,        84,       82,           7
+QATAR        , TAREK SALMAN              , Qatari       , Defender  , CB      ,  28,       38,      68,        62,   66,        82,       80,           7
+QATAR        , HOMAM AHMED               , Qatari       , Defender  , LB      ,  27,       62,      74,        74,   80,        74,       72,           7
+QATAR        , ASSIM MADIBO              , Qatari       , Midfielder, CDM     ,  29,       70,      78,        74,   72,        82,       82,           5
+QATAR        , AHMED FATHI               , Qatari       , Midfielder, CM      ,  32,       74,      78,        78,   74,        72,       74,           5
+QATAR        , AKRAM AFIF                , Qatari       , Midfielder, CAM     ,  30,       86,      84,        88,   86,        58,       66,           5
+QATAR        , ALMOEZ ALI                , Qatari       , Attacker  , ST      ,  30,       84,      74,        80,   82,        40,       76,           5
+QATAR        , AHMED ALAELDIN            , Qatari       , Attacker  , LW      ,  32,       78,      76,        80,   84,        36,       66,           5
+QATAR        , HASSAN AL HAYDOS          , Qatari       , Attacker  , RW      ,  36,       80,      80,        82,   76,        38,       64,           5
+AUSTRALIA    , MATHEW RYAN               , Australian   , Goalkeeper, GK      ,  34,       10,      56,        42,   40,        30,       74,          84
+AUSTRALIA    , NATHANIEL ATKINSON        , Australian   , Defender  , RB      ,  27,       64,      72,        74,   82,        74,       72,           7
+AUSTRALIA    , HARRY SOUTTAR             , Australian   , Defender  , CB      ,  27,       40,      70,        62,   58,        88,       90,           7
+AUSTRALIA    , KYE ROWLES                , Australian   , Defender  , CB      ,  28,       38,      68,        62,   66,        84,       84,           7
+AUSTRALIA    , AZIZ BEHICH               , Australian   , Defender  , LB      ,  35,       62,      74,        74,   78,        74,       72,           7
+AUSTRALIA    , JACKSON IRVINE            , Australian   , Midfielder, CM      ,  33,       76,      80,        78,   72,        78,       82,           5
+AUSTRALIA    , AIDEN O'NEILL             , Australian   , Midfielder, CDM     ,  27,       70,      76,        72,   70,        84,       82,           5
+AUSTRALIA    , CONNOR METCALFE           , Australian   , Midfielder, CAM     ,  27,       74,      80,        80,   78,        70,       72,           5
+AUSTRALIA    , MARTIN BOYLE              , Australian   , Attacker  , RW      ,  33,       82,      76,        82,   88,        38,       68,           5
+AUSTRALIA    , KUSINI YENGI              , Australian   , Attacker  , ST      ,  27,       80,      70,        74,   82,        38,       80,           5
+AUSTRALIA    , MITCHELL DUKE             , Australian   , Attacker  , LW      ,  35,       78,      72,        74,   76,        40,       78,           5
+NEW ZEALAND  , MAX CROCOMBE              , New Zealander, Goalkeeper, GK      ,  32,       10,      52,        40,   40,        28,       72,          82
+NEW ZEALAND  , TIM PAYNE                 , New Zealander, Defender  , RB      ,  32,       60,      70,        70,   76,        74,       74,           7
+NEW ZEALAND  , LIBBY CACACE              , New Zealander, Defender  , LB      ,  25,       66,      74,        76,   82,        74,       72,           7
+NEW ZEALAND  , MICHAEL BOXALL            , New Zealander, Defender  , CB      ,  37,       36,      66,        60,   58,        84,       84,           7
+NEW ZEALAND  , TYLER BINDON              , New Zealander, Defender  , CB      ,  21,       38,      68,        62,   68,        82,       82,           7
+NEW ZEALAND  , JOE BELL                  , New Zealander, Midfielder, CDM     ,  27,       72,      78,        74,   72,        80,       78,           5
+NEW ZEALAND  , SARPREET SINGH            , New Zealander, Midfielder, CAM     ,  27,       78,      82,        84,   76,        62,       66,           5
+NEW ZEALAND  , MARKO STAMENIC            , New Zealander, Midfielder, CM      ,  24,       74,      80,        76,   74,        76,       78,           5
+NEW ZEALAND  , CHRIS WOOD                , New Zealander, Attacker  , ST      ,  35,       84,      70,        72,   68,        42,       86,           5
+NEW ZEALAND  , ELIJAH JUST               , New Zealander, Attacker  , RW      ,  25,       78,      74,        80,   84,        38,       66,           5
+NEW ZEALAND  , BEN WAIN                  , New Zealander, Attacker  , LW      ,  24,       76,      72,        76,   78,        38,       72,           5
+DENMARK      , KASPER SCHMEICHEL         , Danish       , Goalkeeper, GK      ,  39,       10,      58,        42,   40,        30,       76,          86
+DENMARK      , RASMUS KRISTENSEN         , Danish       , Defender  , RB      ,  29,       66,      74,        74,   82,        78,       82,           7
+DENMARK      , ANDREAS CHRISTENSEN       , Danish       , Defender  , CB      ,  30,       42,      78,        72,   70,        88,       84,           7
+DENMARK      , JOACHIM ANDERSEN          , Danish       , Defender  , CB      ,  30,       40,      74,        68,   64,        86,       86,           7
+DENMARK      , JOAKIM MAEHLE             , Danish       , Defender  , LB      ,  29,       72,      78,        80,   84,        74,       72,           7
+DENMARK      , PIERRE-EMILE HOJBJERG     , Danish       , Midfielder, CDM     ,  31,       74,      82,        78,   72,        84,       84,           5
+DENMARK      , CHRISTIAN ERIKSEN         , Danish       , Midfielder, CAM     ,  34,       82,      90,        86,   68,        62,       64,           5
+DENMARK      , MORTEN HJULMAND           , Danish       , Midfielder, CM      ,  27,       74,      80,        76,   72,        82,       80,           5
+DENMARK      , RASMUS HOJLUND            , Danish       , Attacker  , ST      ,  23,       86,      72,        80,   86,        42,       82,           5
+DENMARK      , MOHAMED DARAMY            , Danish       , Attacker  , LW      ,  24,       80,      76,        84,   90,        36,       66,           5
+DENMARK      , JONAS WIND                , Danish       , Attacker  , RW      ,  27,       82,      76,        78,   74,        40,       76,           5
+SWITZERLAND  , GREGOR KOBEL              , Swiss        , Goalkeeper, GK      ,  29,       10,      60,        44,   42,        30,       78,          90
+SWITZERLAND  , SILVAN WIDMER             , Swiss        , Defender  , RB      ,  33,       64,      74,        74,   78,        78,       76,           7
+SWITZERLAND  , MANUEL AKANJI             , Swiss        , Defender  , CB      ,  31,       44,      78,        72,   78,        90,       86,           7
+SWITZERLAND  , NICO ELVEDI               , Swiss        , Defender  , CB      ,  30,       40,      74,        68,   70,        86,       82,           7
+SWITZERLAND  , RICARDO RODRIGUEZ         , Swiss        , Defender  , LB      ,  34,       70,      82,        76,   70,        80,       76,           7
+SWITZERLAND  , GRANIT XHAKA              , Swiss        , Midfielder, CM      ,  34,       80,      88,        82,   68,        82,       84,           5
+SWITZERLAND  , DENIS ZAKARIA             , Swiss        , Midfielder, CDM     ,  30,       76,      80,        78,   80,        84,       86,           5
+SWITZERLAND  , REMO FREULER              , Swiss        , Midfielder, CM      ,  34,       74,      82,        78,   70,        80,       78,           5
+SWITZERLAND  , DAN NDoye                 , Swiss        , Attacker  , RW      ,  25,       82,      76,        84,   90,        40,       72,           5
+SWITZERLAND  , BREEL EMBOLO              , Swiss        , Attacker  , ST      ,  29,       84,      74,        80,   82,        42,       86,           5
+SWITZERLAND  , NOAH OKAFOR               , Swiss        , Attacker  , LW      ,  26,       82,      76,        84,   88,        38,       72,           5
+SERBIA       , DJORDE PETROVIC           , Serbian      , Goalkeeper, GK      ,  27,       10,      56,        42,   40,        30,       74,          86
+SERBIA       , NIKOLA MILENKOVIC         , Serbian      , Defender  , CB      ,  28,       42,      72,        66,   68,        88,       88,           7
+SERBIA       , STRAHINJA PAVLOVIC        , Serbian      , Defender  , CB      ,  25,       40,      70,        66,   72,        88,       86,           7
+SERBIA       , ANDRIJA ZIVKOVIC          , Serbian      , Defender  , RB      ,  30,       72,      80,        82,   84,        70,       68,           7
+SERBIA       , FILIP MLADENOVIC          , Serbian      , Defender  , LB      ,  35,       66,      76,        76,   78,        74,       74,           7
+SERBIA       , NEMANJA MAKSIMOVIC        , Serbian      , Midfielder, CDM     ,  31,       72,      78,        74,   70,        82,       82,           5
+SERBIA       , SERGEJ MILINKOVIC-SAVIC   , Serbian      , Midfielder, CM      ,  31,       84,      86,        84,   72,        78,       88,           5
+SERBIA       , DUSAN TADIC               , Serbian      , Midfielder, CAM     ,  38,       82,      90,        88,   72,        60,       66,           5
+SERBIA       , DUSAN VLAHOVIC            , Serbian      , Attacker  , ST      ,  26,       90,      74,        82,   80,        42,       86,           5
+SERBIA       , ALEKSANDAR MITROVIC       , Serbian      , Attacker  , ST      ,  32,       88,      70,        74,   68,        40,       92,           5
+SERBIA       , LAZAR SAMARDZIC           , Serbian      , Attacker  , RW      ,  24,       82,      84,        88,   80,        44,       68,           5
+POLAND       , LUKASZ SKORUPSKI          , Polish       , Goalkeeper, GK      ,  35,       10,      54,        40,   38,        30,       74,          84
+POLAND       , MATTY CASH                , Polish       , Defender  , RB      ,  29,       70,      76,        78,   84,        74,       74,           7
+POLAND       , JAKUB KIWIOR              , Polish       , Defender  , CB      ,  26,       42,      72,        66,   72,        86,       84,           7
+POLAND       , PAWEL DAWIDOWICZ          , Polish       , Defender  , CB      ,  31,       38,      68,        62,   66,        84,       84,           7
+POLAND       , BARTOSZ BERESZYNSKI       , Polish       , Defender  , LB      ,  34,       64,      72,        72,   76,        76,       74,           7
+POLAND       , PIOTR ZIELINSKI           , Polish       , Midfielder, CAM     ,  32,       82,      88,        86,   76,        64,       68,           5
+POLAND       , JAKUB MODER               , Polish       , Midfielder, CM      ,  27,       76,      80,        78,   74,        76,       78,           5
+POLAND       , SEBASTIAN SZYMANSKI       , Polish       , Midfielder, CM      ,  27,       78,      84,        84,   78,        68,       70,           5
+POLAND       , ROBERT LEWANDOWSKI        , Polish       , Attacker  , ST      ,  38,       92,      82,        86,   74,        42,       84,           5
+POLAND       , KAROL SWIDERSKI           , Polish       , Attacker  , LW      ,  29,       80,      74,        78,   80,        38,       74,           5
+POLAND       , NICOLA ZALEWSKI           , Polish       , Attacker  , RW      ,  24,       78,      80,        84,   86,        44,       68,           5
+NORWAY       , ORJAN NYLAND              , Norwegian    , Goalkeeper, GK      ,  36,       10,      56,        42,   40,        30,       74,          84
+NORWAY       , JULIAN RYERSON            , Norwegian    , Defender  , RB      ,  29,       68,      74,        74,   82,        80,       80,           7
+NORWAY       , LEO OSTIGAARD             , Norwegian    , Defender  , CB      ,  26,       38,      68,        62,   70,        88,       88,           7
+NORWAY       , KRISTOFFER AJER           , Norwegian    , Defender  , CB      ,  28,       42,      72,        68,   74,        84,       84,           7
+NORWAY       , BIRGER MELING             , Norwegian    , Defender  , LB      ,  31,       66,      76,        76,   80,        76,       72,           7
+NORWAY       , MARTIN ODEGAARD           , Norwegian    , Midfielder, CAM     ,  28,       84,      92,        90,   80,        64,       68,           5
+NORWAY       , SANDER BERGE              , Norwegian    , Midfielder, CDM     ,  28,       72,      78,        74,   70,        82,       84,           5
+NORWAY       , PATRICK BERG              , Norwegian    , Midfielder, CM      ,  28,       74,      82,        76,   72,        80,       76,           5
+NORWAY       , ERLING HAALAND            , Norwegian    , Attacker  , ST      ,  26,       96,      72,        82,   90,        42,       94,           5
+NORWAY       , ALEXANDER SORLOTH         , Norwegian    , Attacker  , LW      ,  31,       86,      72,        76,   78,        40,       90,           5
+NORWAY       , OSCAR BOBB                , Norwegian    , Attacker  , RW      ,  23,       80,      82,        88,   88,        38,       66,           5
+SWEDEN       , ROBIN OLSEN               , Swedish      , Goalkeeper, GK      ,  36,       10,      54,        40,   38,        30,       72,          84
+SWEDEN       , EMIL KRAFTH               , Swedish      , Defender  , RB      ,  32,       62,      70,        70,   74,        78,       78,           7
+SWEDEN       , VICTOR LINDELOF           , Swedish      , Defender  , CB      ,  32,       40,      76,        70,   68,        86,       82,           7
+SWEDEN       , ISAK HIEN                 , Swedish      , Defender  , CB      ,  27,       38,      70,        64,   72,        88,       86,           7
+SWEDEN       , LUDWIG AUGUSTINSSON       , Swedish      , Defender  , LB      ,  32,       64,      76,        74,   74,        76,       74,           7
+SWEDEN       , DEJAN KULUSEVSKI          , Swedish      , Midfielder, RM      ,  26,       82,      84,        88,   84,        62,       72,           5
+SWEDEN       , JENS CAJUSTE              , Swedish      , Midfielder, CM      ,  27,       74,      78,        78,   76,        78,       80,           5
+SWEDEN       , EMIL FORSBERG             , Swedish      , Midfielder, CAM     ,  35,       82,      86,        84,   74,        60,       68,           5
+SWEDEN       , ALEXANDER ISAK            , Swedish      , Attacker  , ST      ,  27,       90,      78,        88,   88,        42,       80,           5
+SWEDEN       , ANTHONY ELANGA            , Swedish      , Attacker  , LW      ,  24,       80,      74,        82,   92,        38,       68,           5
+SWEDEN       , VIKTOR GYOKERES           , Swedish      , Attacker  , RW      ,  28,       90,      74,        82,   86,        40,       90,           5
+TURKEY       , MERT GUNOK                , Turkish      , Goalkeeper, GK      ,  37,       10,      52,        40,   38,        30,       74,          84
+TURKEY       , ZEKI CELIK                , Turkish      , Defender  , RB      ,  29,       66,      72,        72,   78,        78,       78,           7
+TURKEY       , MERIH DEMIRAL             , Turkish      , Defender  , CB      ,  28,       40,      70,        64,   70,        88,       88,           7
+TURKEY       , ABDULKERIM BARDAKCI       , Turkish      , Defender  , CB      ,  31,       38,      68,        62,   66,        86,       84,           7
+TURKEY       , FERDI KADIOGLU            , Turkish      , Defender  , LB      ,  27,       74,      82,        86,   88,        74,       72,           7
+TURKEY       , HAKAN CALHANOGLU          , Turkish      , Midfielder, CM      ,  32,       84,      92,        86,   72,        72,       74,           5
+TURKEY       , ISMAIL YUKSEK             , Turkish      , Midfielder, CDM     ,  27,       70,      76,        72,   72,        82,       80,           5
+TURKEY       , ARDA GULER                , Turkish      , Midfielder, CAM     ,  21,       84,      88,        90,   82,        58,       62,           5
+TURKEY       , KENAN YILDIZ              , Turkish      , Attacker  , LW      ,  21,       84,      80,        88,   86,        40,       72,           5
+TURKEY       , BARIŞ ALPER YILMAZ        , Turkish      , Attacker  , RW      ,  26,       82,      74,        80,   90,        42,       80,           5
+TURKEY       , SEMİH KILICSOY            , Turkish      , Attacker  , ST      ,  21,       82,      72,        80,   82,        38,       78,           5
+AUSTRIA      , PATRICK PENTZ             , Austrian     , Goalkeeper, GK      ,  29,       10,      54,        40,   38,        30,       74,          84
+AUSTRIA      , STEFAN POSCH              , Austrian     , Defender  , RB      ,  29,       64,      72,        70,   76,        82,       82,           7
+AUSTRIA      , KEVIN DANSO               , Austrian     , Defender  , CB      ,  28,       40,      70,        64,   70,        88,       88,           7
+AUSTRIA      , MAXIMILIAN WOBER          , Austrian     , Defender  , CB      ,  28,       40,      72,        66,   68,        84,       84,           7
+AUSTRIA      , PHILIPP MWENE             , Austrian     , Defender  , LB      ,  32,       66,      74,        76,   82,        76,       74,           7
+AUSTRIA      , KONRAD LAIMER             , Austrian     , Midfielder, CM      ,  29,       76,      80,        78,   84,        84,       84,           5
+AUSTRIA      , MARCEL SABITZER           , Austrian     , Midfielder, CAM     ,  32,       84,      86,        82,   76,        70,       74,           5
+AUSTRIA      , CHRISTOPH BAUMGARTNER     , Austrian     , Midfielder, AM      ,  27,       82,      82,        84,   80,        68,       72,           5
+AUSTRIA      , MARKO ARNAUTOVIC          , Austrian     , Attacker  , ST      ,  37,       86,      76,        80,   72,        40,       84,           5
+AUSTRIA      , MICHAEL GREGORITSCH       , Austrian     , Attacker  , LW      ,  32,       82,      74,        76,   72,        42,       84,           5
+AUSTRIA      , NICOLAS SEIWALD           , Austrian     , Attacker  , RW      ,  25,       74,      80,        78,   78,        72,       72,           5
+UKRAINE      , ANATOLIY TRUBIN           , Ukrainian    , Goalkeeper, GK      ,  25,       10,      56,        42,   40,        30,       76,          88
+UKRAINE      , YUKHYM KONOPLYA           , Ukrainian    , Defender  , RB      ,  27,       66,      74,        74,   82,        76,       74,           7
+UKRAINE      , ILLYA ZABARNYI            , Ukrainian    , Defender  , CB      ,  24,       40,      72,        66,   74,        88,       86,           7
+UKRAINE      , MYKOLA MATVIENKO          , Ukrainian    , Defender  , CB      ,  30,       42,      76,        72,   72,        84,       82,           7
+UKRAINE      , VITALIY MYKOLENKO         , Ukrainian    , Defender  , LB      ,  27,       64,      74,        72,   80,        80,       78,           7
+UKRAINE      , TARAS STEPANENKO          , Ukrainian    , Midfielder, CDM     ,  37,       70,      78,        72,   66,        84,       84,           5
+UKRAINE      , OLEKSANDR ZINCHENKO       , Ukrainian    , Midfielder, CM      ,  30,       78,      88,        86,   78,        72,       70,           5
+UKRAINE      , HEORHIY SUDAKOV           , Ukrainian    , Midfielder, CAM     ,  24,       82,      84,        88,   80,        66,       68,           5
+UKRAINE      , MYKHAILO MUDRYK           , Ukrainian    , Attacker  , LW      ,  25,       82,      74,        86,   96,        36,       64,           5
+UKRAINE      , ARTEM DOVBYK              , Ukrainian    , Attacker  , ST      ,  29,       88,      72,        78,   80,        40,       88,           5
+UKRAINE      , VIKTOR TSYGANKOV          , Ukrainian    , Attacker  , RW      ,  29,       82,      80,        84,   84,        42,       70,           5
+SCOTLAND     , ANGUS GUNN                , Scottish     , Goalkeeper, GK      ,  31,       10,      54,        40,   38,        30,       74,          84
+SCOTLAND     , AARON HICKEY              , Scottish     , Defender  , RB      ,  24,       68,      76,        78,   84,        76,       74,           7
+SCOTLAND     , JOHN SOUTTAR              , Scottish     , Defender  , CB      ,  30,       38,      68,        62,   64,        86,       86,           7
+SCOTLAND     , KIERAN TIERNEY            , Scottish     , Defender  , CB      ,  29,       68,      78,        78,   84,        82,       82,           7
+SCOTLAND     , ANDREW ROBERTSON          , Scottish     , Defender  , LB      ,  32,       74,      84,        82,   84,        80,       78,           7
+SCOTLAND     , BILLY GILMOUR             , Scottish     , Midfielder, CM      ,  25,       74,      86,        84,   74,        72,       68,           5
+SCOTLAND     , SCOTT MCTOMINAY           , Scottish     , Midfielder, CM      ,  30,       82,      78,        76,   72,        80,       88,           5
+SCOTLAND     , JOHN MCGINN               , Scottish     , Midfielder, CAM     ,  31,       80,      82,        80,   74,        76,       82,           5
+SCOTLAND     , CHE ADAMS                 , Scottish     , Attacker  , ST      ,  30,       80,      72,        76,   78,        38,       80,           5
+SCOTLAND     , BEN DOAK                  , Scottish     , Attacker  , RW      ,  20,       78,      74,        84,   92,        34,       62,           5
+SCOTLAND     , RYAN CHRISTIE             , Scottish     , Attacker  , LW      ,  31,       76,      80,        78,   76,        60,       70,           5
+COLOMBIA     , CAMILO VARGAS             , Colombian    , Goalkeeper, GK      ,  37,       10,      54,        40,   38,        30,       76,          86
+COLOMBIA     , DANIEL MUNOZ              , Colombian    , Defender  , RB      ,  30,       72,      78,        80,   86,        78,       80,           7
+COLOMBIA     , DAVINSON SANCHEZ          , Colombian    , Defender  , CB      ,  30,       40,      70,        64,   76,        86,       86,           7
+COLOMBIA     , CARLOS CUESTA             , Colombian    , Defender  , CB      ,  27,       38,      68,        62,   72,        84,       82,           7
+COLOMBIA     , JOHAN MOJICA              , Colombian    , Defender  , LB      ,  34,       70,      76,        78,   84,        76,       74,           7
+COLOMBIA     , JEFFERSON LERMA           , Colombian    , Midfielder, CDM     ,  31,       74,      78,        74,   72,        84,       86,           5
+COLOMBIA     , RICHARD RIOS              , Colombian    , Midfielder, CM      ,  26,       76,      82,        82,   78,        76,       78,           5
+COLOMBIA     , JAMES RODRIGUEZ           , Colombian    , Midfielder, CAM     ,  35,       84,      92,        88,   66,        58,       64,           5
+COLOMBIA     , LUIS DIAZ                 , Colombian    , Attacker  , LW      ,  30,       88,      80,        90,   94,        42,       74,           5
+COLOMBIA     , JHON DURAN                , Colombian    , Attacker  , ST      ,  23,       86,      70,        80,   84,        40,       86,           5
+COLOMBIA     , LUIS SINISTERRA           , Colombian    , Attacker  , RW      ,  27,       82,      76,        86,   90,        38,       68,           5
+ECUADOR      , HERNAN GALINDEZ           , Ecuadorian   , Goalkeeper, GK      ,  39,       10,      52,        40,   38,        30,       74,          84
+ECUADOR      , ANGELO PRECIADO           , Ecuadorian   , Defender  , RB      ,  28,       68,      74,        76,   88,        76,       74,           7
+ECUADOR      , WILLIAN PACHO             , Ecuadorian   , Defender  , CB      ,  25,       40,      72,        66,   78,        90,       86,           7
+ECUADOR      , FELIX TORRES              , Ecuadorian   , Defender  , CB      ,  29,       38,      68,        62,   74,        86,       84,           7
+ECUADOR      , PERVIS ESTUPINAN          , Ecuadorian   , Defender  , LB      ,  28,       72,      80,        80,   90,        78,       78,           7
+ECUADOR      , MOISES CAICEDO            , Ecuadorian   , Midfielder, CDM     ,  25,       76,      84,        82,   82,        88,       88,           5
+ECUADOR      , KENDRY PAEZ               , Ecuadorian   , Midfielder, CAM     ,  19,       82,      86,        90,   82,        60,       64,           5
+ECUADOR      , ALAN FRANCO               , Ecuadorian   , Midfielder, CM      ,  27,       72,      78,        76,   74,        78,       80,           5
+ECUADOR      , ENNER VALENCIA            , Ecuadorian   , Attacker  , ST      ,  37,       84,      72,        76,   86,        38,       78,           5
+ECUADOR      , JHON YEB0AH               , Ecuadorian   , Attacker  , RW      ,  26,       80,      76,        84,   92,        36,       68,           5
+ECUADOR      , JEREMY SARMIENTO          , Ecuadorian   , Attacker  , LW      ,  24,       80,      78,        86,   88,        38,       66,           5
+CHILE        , BRAYAN CORTES             , Chilean      , Goalkeeper, GK      ,  31,       10,      52,        40,   38,        30,       74,          84
+CHILE        , FELIPE LOYOLA             , Chilean      , Defender  , RB      ,  25,       68,      74,        74,   82,        76,       76,           7
+CHILE        , PAULO DIAZ                , Chilean      , Defender  , CB      ,  32,       40,      72,        66,   72,        86,       84,           7
+CHILE        , GUILLERMO MARIPAN         , Chilean      , Defender  , CB      ,  32,       38,      68,        62,   66,        88,       88,           7
+CHILE        , GABRIEL SUAZO             , Chilean      , Defender  , LB      ,  29,       68,      78,        78,   82,        76,       74,           7
+CHILE        , ERIC PULGAR               , Chilean      , Midfielder, CDM     ,  32,       74,      80,        74,   68,        84,       84,           5
+CHILE        , MARCELINO NUNEZ           , Chilean      , Midfielder, CM      ,  25,       78,      84,        82,   76,        72,       72,           5
+CHILE        , DARIO OSORIO              , Chilean      , Midfielder, CAM     ,  22,       80,      82,        86,   84,        60,       64,           5
+CHILE        , ALEXIS SANCHEZ            , Chilean      , Attacker  , LW      ,  38,       84,      82,        86,   80,        42,       70,           5
+CHILE        , EDUARDO VARGAS            , Chilean      , Attacker  , ST      ,  36,       82,      72,        76,   78,        38,       74,           5
+CHILE        , BEN BRERETON DIAZ         , Chilean      , Attacker  , RW      ,  27,       82,      74,        78,   82,        40,       80,           5
+PERU         , PEDRO GALLESE             , Peruvian     , Goalkeeper, GK      ,  36,       10,      52,        40,   38,        30,       76,          86
+PERU         , LUIS ADVINCULA            , Peruvian     , Defender  , RB      ,  36,       70,      74,        74,   90,        74,       76,           7
+PERU         , CARLOS ZAMBRANO           , Peruvian     , Defender  , CB      ,  37,       38,      68,        62,   62,        88,       88,           7
+PERU         , ALEXANDER CALLENS         , Peruvian     , Defender  , CB      ,  33,       40,      72,        66,   68,        84,       84,           7
+PERU         , MIGUEL TRAUCO             , Peruvian     , Defender  , LB      ,  33,       66,      78,        76,   76,        74,       72,           7
+PERU         , RENATO TAPIA              , Peruvian     , Midfielder, CDM     ,  31,       72,      80,        76,   72,        84,       84,           5
+PERU         , PEDRO AQUINO              , Peruvian     , Midfielder, CM      ,  31,       70,      76,        72,   70,        82,       82,           5
+PERU         , Piero QUISPE              , Peruvian     , Midfielder, CAM     ,  24,       78,      84,        86,   82,        60,       64,           5
+PERU         , GIANLUCA LAPADULA         , Peruvian     , Attacker  , ST      ,  36,       84,      72,        76,   74,        40,       82,           5
+PERU         , ANDRE CARRILLO            , Peruvian     , Attacker  , RW      ,  35,       80,      78,        84,   86,        42,       68,           5
+PERU         , BRYAN REYNA               , Peruvian     , Attacker  , LW      ,  27,       78,      74,        82,   88,        38,       66,           5
+PARAGUAY     , CARLOS CORONEL            , Paraguayan   , Goalkeeper, GK      ,  29,       10,      52,        40,   38,        30,       74,          84
+PARAGUAY     , JUAN CACERES              , Paraguayan   , Defender  , RB      ,  26,       66,      72,        72,   82,        76,       76,           7
+PARAGUAY     , GUSTAVO GOMEZ             , Paraguayan   , Defender  , CB      ,  33,       40,      72,        66,   68,        90,       90,           7
+PARAGUAY     , OMAR ALDERETE             , Paraguayan   , Defender  , CB      ,  30,       38,      68,        62,   70,        88,       88,           7
+PARAGUAY     , BLAS RIVEROS              , Paraguayan   , Defender  , LB      ,  28,       64,      74,        74,   78,        76,       74,           7
+PARAGUAY     , ANDRES CUBAS              , Paraguayan   , Midfielder, CDM     ,  29,       70,      76,        72,   70,        84,       84,           5
+PARAGUAY     , DIEGO GOMEZ               , Paraguayan   , Midfielder, CM      ,  23,       78,      82,        80,   78,        74,       76,           5
+PARAGUAY     , MIGUEL ALMIRON            , Paraguayan   , Midfielder, CAM     ,  32,       82,      82,        84,   90,        60,       68,           5
+PARAGUAY     , JULIO ENCISO              , Paraguayan   , Attacker  , LW      ,  22,       84,      80,        88,   88,        40,       70,           5
+PARAGUAY     , GABRIEL AVALOS            , Paraguayan   , Attacker  , ST      ,  35,       82,      70,        74,   72,        38,       84,           5
+PARAGUAY     , RAMON SOSA                , Paraguayan   , Attacker  , RW      ,  26,       80,      76,        84,   88,        38,       68,           5
+VENEZUELA    , RAFAEL ROMO               , Venezuelan   , Goalkeeper, GK      ,  36,       10,      52,        40,   38,        30,       74,          84
+VENEZUELA    , JON ARAMBURU              , Venezuelan   , Defender  , RB      ,  24,       66,      74,        74,   84,        76,       74,           7
+VENEZUELA    , YORDAN OSORIO             , Venezuelan   , Defender  , CB      ,  32,       38,      68,        62,   66,        86,       84,           7
+VENEZUELA    , NAHUEL FERRARESI          , Venezuelan   , Defender  , CB      ,  27,       40,      70,        64,   72,        84,       84,           7
+VENEZUELA    , MIGUEL NAVARRO            , Venezuelan   , Defender  , LB      ,  27,       64,      74,        74,   80,        76,       74,           7
+VENEZUELA    , YANGEL HERRERA            , Venezuelan   , Midfielder, CM      ,  28,       78,      82,        80,   76,        80,       84,           5
+VENEZUELA    , TOMAS RINCON              , Venezuelan   , Midfielder, CDM     ,  38,       70,      76,        72,   66,        84,       84,           5
+VENEZUELA    , JEFFERSON SAVARINO        , Venezuelan   , Midfielder, CAM     ,  30,       82,      82,        86,   88,        58,       66,           5
+VENEZUELA    , SALOMON RONDON            , Venezuelan   , Attacker  , ST      ,  37,       86,      72,        74,   68,        42,       90,           5
+VENEZUELA    , DARWIN MACHIS             , Venezuelan   , Attacker  , LW      ,  33,       80,      74,        82,   90,        38,       68,           5
+VENEZUELA    , YEFERSON SOTELDO          , Venezuelan   , Attacker  , RW      ,  29,       82,      84,        90,   86,        36,       60,           5

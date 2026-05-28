@@ -155,6 +155,23 @@ int main()
       cout << "=====================================\n\n";
 
       vector<Team> wcTeams = loadTeams("wc_nations.csv");
+      vector<Group> groups;
+
+      Group groupA;
+      groupA.name = "Group A";
+
+      Group groupB;
+      groupB.name = "Group B";
+
+      groupA.standings.emplace_back(wcTeams[0]);
+      groupA.standings.emplace_back(wcTeams[2]);
+      groupA.standings.emplace_back(wcTeams[5]);
+      groupA.standings.emplace_back(wcTeams[9]);
+
+      for (const Standing &s : groupA.standings)
+      {
+        cout << s.team.name << "\n";
+      }
 
       if (wcTeams.size() < 32)
       {
@@ -166,6 +183,7 @@ int main()
       {
         // WorldCup wc;
         // wc.run(wcTeams);
+
         cout << "Press any number to return to menu: ";
         string back;
         cin >> back;
