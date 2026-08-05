@@ -252,7 +252,7 @@ Most beginners never even reach this level because they spend three months watch
 ### 1. Compile the Program
 
 ```bash
-g++ footballSimulator.cpp -o footballSimulator
+g++ main.cpp loader.cpp match.cpp -o football ./football
 ```
 
 ### 2. Run the Executable
@@ -322,7 +322,6 @@ Where:
 |---|---|
 | Hardcoded Teams | No user-created teams |
 | No Goalkeeper Logic | GK stats not implemented |
-| No Positions | All players weighted equally |
 | No League System | Single match only |
 | No Persistence | Data resets every run |
 | Basic Simulation | No tactics or formations |
