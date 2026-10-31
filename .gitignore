@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Executables
+main
+
+# Debug files
+*.dSYM/
+
+# Temp files
+tempCodeRunnerFile*
