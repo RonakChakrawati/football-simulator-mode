@@ -252,7 +252,7 @@ Most beginners never even reach this level because they spend three months watch
 ### 1. Compile the Program
 
 ```bash
-g++ main.cpp loader.cpp match.cpp -o football ./football
+g++ -std=c++17 -Wall -Wextra -g main.cpp loader.cpp match.cpp -o football ./football
 ```
 
 ### 2. Run the Executable
