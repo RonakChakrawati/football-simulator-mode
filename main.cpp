@@ -155,40 +155,92 @@ int main()
       cout << "=====================================\n\n";
 
       vector<Team> wcTeams = loadTeams("wc_nations.csv");
-      vector<Group> groups;
+      vector<Group> groups(12);
+      groups[0].name = "GROUP A";
+      groups[1].name = "GROUP B";
+      groups[2].name = "GROUP C";
+      groups[3].name = "GROUP D";
+      groups[4].name = "GROUP E";
+      groups[5].name = "GROUP F";
+      groups[6].name = "GROUP G";
+      groups[7].name = "GROUP H";
+      groups[8].name = "GROUP I";
+      groups[9].name = "GROUP J";
+      groups[10].name = "GROUP K";
+      groups[11].name = "GROUP L";
 
-      Group groupA;
-      groupA.name = "Group A";
+      // GROUP A
+      groups[0].standings.push_back(Standing(wcTeams[21])); 
+      groups[0].standings.push_back(Standing(wcTeams[26])); 
+      groups[0].standings.push_back(Standing(wcTeams[41]));
+      groups[0].standings.push_back(Standing(wcTeams[35])); 
 
-      Group groupB;
-      groupB.name = "Group B";
+      // GROUP B
+      groups[1].standings.push_back(Standing(wcTeams[22])); 
+      groups[1].standings.push_back(Standing(wcTeams[33])); 
+      groups[1].standings.push_back(Standing(wcTeams[29]));
+      groups[1].standings.push_back(Standing(wcTeams[34])); 
 
-      groupA.standings.emplace_back(wcTeams[0]);
-      groupA.standings.emplace_back(wcTeams[2]);
-      groupA.standings.emplace_back(wcTeams[5]);
-      groupA.standings.emplace_back(wcTeams[9]);
+      // GROUP C
+      groups[2].standings.push_back(Standing(wcTeams[2]));
+      groups[2].standings.push_back(Standing(wcTeams[12]));
+      groups[2].standings.push_back(Standing(wcTeams[44])); 
+      groups[2].standings.push_back(Standing(wcTeams[41]));
 
-      for (const Standing &s : groupA.standings)
-      {
-        cout << s.team.name << "\n";
-      }
+      // GROUP D
+      groups[3].standings.push_back(Standing(wcTeams[20]));
+      groups[3].standings.push_back(Standing(wcTeams[46]));
+      groups[3].standings.push_back(Standing(wcTeams[30]));
+      groups[3].standings.push_back(Standing(wcTeams[38]));
 
-      if (wcTeams.size() < 32)
-      {
-        cout << "ERROR: Could not load WC teams. Check wc_nations.csv exists.\n";
-        string back;
-        cin >> back;
-      }
-      else
-      {
-        // WorldCup wc;
-        // wc.run(wcTeams);
+      // GROUP E
+      groups[4].standings.push_back(Standing(wcTeams[6]));
+      groups[4].standings.push_back(Standing(wcTeams[15]));
+      groups[4].standings.push_back(Standing(wcTeams[43]));
+      groups[4].standings.push_back(Standing(wcTeams[17]));
 
-        cout << "Press any number to return to menu: ";
-        string back;
-        cin >> back;
-        system("clear");
-      }
+      // GROUP F
+      groups[5].standings.push_back(Standing(wcTeams[8])); 
+      groups[5].standings.push_back(Standing(wcTeams[25]));
+      groups[5].standings.push_back(Standing(wcTeams[37]));
+      groups[5].standings.push_back(Standing(wcTeams[19]));
+
+      // GROUP G
+      groups[6].standings.push_back(Standing(wcTeams[9]));
+      groups[6].standings.push_back(Standing(wcTeams[17]));
+      groups[6].standings.push_back(Standing(wcTeams[27]));
+      groups[6].standings.push_back(Standing(wcTeams[31]));
+
+      // GROUP H
+      groups[7].standings.push_back(Standing(wcTeams[3]));
+      groups[7].standings.push_back(Standing(wcTeams[28]));
+      groups[7].standings.push_back(Standing(wcTeams[10]));
+      groups[7].standings.push_back(Standing(wcTeams[13]));
+
+      // GROUP I
+      groups[8].standings.push_back(Standing(wcTeams[1]));
+      groups[8].standings.push_back(Standing(wcTeams[13]));
+      groups[8].standings.push_back(Standing(wcTeams[36]));
+      groups[8].standings.push_back(Standing(wcTeams[18]));
+
+      // GROUP J
+      groups[9].standings.push_back(Standing(wcTeams[0]));
+      groups[9].standings.push_back(Standing(wcTeams[16]));
+      groups[9].standings.push_back(Standing(wcTeams[39]));
+      groups[9].standings.push_back(Standing(wcTeams[47]));
+
+      // GROUP K
+      groups[10].standings.push_back(Standing(wcTeams[4]));
+      groups[10].standings.push_back(Standing(wcTeams[42]));
+      groups[10].standings.push_back(Standing(wcTeams[24]));
+      groups[10].standings.push_back(Standing(wcTeams[32]));
+
+      // GROUP L
+      groups[11].standings.push_back(Standing(wcTeams[5])); 
+      groups[11].standings.push_back(Standing(wcTeams[11]));
+      groups[11].standings.push_back(Standing(wcTeams[23])); 
+      groups[11].standings.push_back(Standing(wcTeams[45])); 
+      
     }
 
     else if (choice == 5)

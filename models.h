@@ -174,6 +174,9 @@ class Group
   public:
   string name;
   vector<Standing> standings;
+  void displayTable() const{
+
+  }
 };
 
 #endif
